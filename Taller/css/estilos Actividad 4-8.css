@@ -1,0 +1,104 @@
+
+
+body{
+    background-color: rgb(201, 201, 192);
+    margin: 20px;
+}
+
+/* Punto 4 */
+
+.h1-rojo{
+    color: red;
+}
+.h1-azul{
+    color: blue;
+}
+
+/* Punto 5 */
+
+.p5-verde{
+    color: green;
+    text-decoration: underline;
+}
+.p5-rojo{
+    color: red;
+    font-weight: bold;
+}
+.p5-linea{
+text-decoration: underline overline;
+}
+.p5-negrilla{
+    font-weight: bold;
+    font-size: 40px;
+}
+.p5-sf{
+    color: blue;
+    font-weight: bold;
+}
+.p5-f{
+    color: red;
+    text-decoration: underline;
+}
+
+/* Punto 6 */
+
+.amarillo{
+    color: yellow;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.morado{
+    color: purple;
+    font-size: 18px;
+}
+
+/* Punto 7 */
+
+.menu{
+    display: inline flex;
+    background-color: darkorchid;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+    width: 520px;
+}
+.menu a{
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.menu a:hover{
+    background-color: blue;
+}
+
+/* Punto 8 */
+
+table{
+    background-color: yellow;
+    border-top: 1px dotted;
+    border-bottom: 2px red dashed;
+    border-spacing: 0px;
+}
+thead th{
+    color: red;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+thead tr::first-letter{
+    font-size: 18px;
+    font-weight: bold;
+}
+td{
+    border: 1px dotted;
+}
+tr{
+    padding: 0;
+    margin: 0;
+}

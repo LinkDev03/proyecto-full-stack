@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: linear-gradient(
+        180deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(196deg 100% 18%) 28%,
+        hsl(164deg 100% 18%) 37%,
+        hsl(204deg 100% 31%) 44%,
+        hsl(319deg 40% 43%) 50%,
+        hsl(351deg 48% 48%) 59%,
+        hsl(16deg 63% 55%) 71%,
+        hsl(33deg 86% 63%) 100%
+      );
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+h2{
+ font-size: 16px;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ color: white;
+}
+
+p{
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+figcaption{
+    color: white;
+}
+
+.Gato-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.Gato-1 img{
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.Gato-2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.Gato-2 img{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 420px;
+}
+.Gato-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.Gato-3 img{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.Gato-4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.Gato-4 img{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.Gato-5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.Gato-5 img{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 420px;
+}
+
+
+/* Media querys */
+
+
+@media (max-width: 420px) {
+body{
+    background-image: linear-gradient(
+  45deg,
+  hsl(161deg 100% 20%) 0%,
+  hsl(141deg 53% 34%) 10%,
+  hsl(110deg 40% 45%) 19%,
+  hsl(85deg 54% 48%) 28%,
+  hsl(68deg 71% 49%) 37%,
+  hsl(55deg 100% 50%) 46%,
+  hsl(47deg 100% 50%) 56%,
+  hsl(39deg 100% 50%) 66%,
+  hsl(30deg 100% 50%) 76%,
+  hsl(20deg 100% 50%) 88%,
+  hsl(0deg 100% 50%) 100%
+);
+}
+    h1{
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-style: oblique;
+    }
+
+    h2{
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+    p{
+        font-size: 12px;
+        justify-content: center;
+        text-decoration: solid;
+        color: black;
+    }
+
+    figcaption{
+        color: black;
+    }   
+    
+
+    .Gato-1 img{
+        width: 50%;
+        border-radius: 30px;
+        display: flex;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-2 img{
+        width: 50%;
+        border-radius: 30px;
+        display: flex;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-3 img{
+        width: 50%;
+        border-radius: 30px;
+        display: flex;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-4 img{
+        width: 50%;
+        border-radius: 30px;
+        display: flex;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-5 img{
+        width: 50%;
+        border-radius: 30px;
+        display: flex;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+
+}
+
+
+@media (min-width: 421px) and (max-width: 768px){
+
+    body{
+        background-image: linear-gradient(
+  220deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(9deg 55% 59%) 34%,
+  hsl(59deg 50% 77%) 50%,
+  hsl(78deg 28% 53%) 59%,
+  hsl(52deg 47% 32%) 64%,
+  hsl(13deg 53% 29%) 69%,
+  hsl(13deg 61% 43%) 76%,
+  hsl(33deg 100% 50%) 100%
+);
+    }
+    
+    h1{
+        font-size: 19px;
+        color: burlywood;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+
+    h2{
+    font-size: 15px;
+    color: coral;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+    p{
+        font-size: 13px;
+        justify-content: center;
+        text-decoration: solid;
+    }
+
+    .Gato-1 img{
+        width: 60%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-2 img{
+        width: 60%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-3 img{
+        width: 60%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-4 img{
+        width: 60%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+      .Gato-5 img{
+        width: 60%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 25px;
+        justify-items: center;
+    }
+
+
+
+
+
+}
