@@ -1,7 +1,376 @@
-#calse{
-background-color: antiquewhite;
-align-content: center;
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0; 
 }
-.cksd{
-    color: #000;
+
+
+body{
+  background-color:  #E1DDDD;
+  overflow-x: hidden;
 }
+
+header{
+  width: 100%;
+  max-width: 1920px;
+  height: 15em;
+  background-color: #DFE238;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.logo /*img*/{ 
+  background-image: url(../resourses/img/logos/MasterMusicStore.png);
+  background-size: cover;
+  background-position: center;
+  width: 185px;
+  height: 90px;
+  margin-left: 28px;
+  /* margin-top: 8px; */
+  box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#Search{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 751px;
+  max-height: 63px;
+  position: absolute;
+  left: 320px;
+  top: 17px;
+  padding-inline-start: 20px;
+  outline: none;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-style: none;
+}
+#Search_Button{
+  background: rgba(254, 158, 44, 0.85);
+  border-radius: 10px;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 1007px;
+  top: 17px;
+  border-style: none;
+}
+
+.User_Button{
+  width: 280px;
+  height: 68px;
+  background: #CFD235;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+  position: absolute;
+  left: 1149px;
+  top: 17px;
+}
+
+.User_Button i{
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1px;
+  text-shadow:  4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.User_Button a{
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Inert_Buttons{
+  display: flex;
+  align-content: space-evenly;
+}
+
+#gt{
+  width: 165px;
+  height: 68px;
+  position: absolute;
+  left: 201px;
+  top: 106px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#bp{
+  width: 165px;
+  height: 68px;
+  position: absolute;
+  left: 386px;
+  top: 106px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#ts{
+  width: 165px;
+  height: 68px;
+  position: absolute;
+  left: 571px;
+  top: 106px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#bj{
+  width: 165px;
+  height: 68px;
+  position: absolute;
+  left: 756px;
+  top: 106px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#ge{
+  width: 165px;
+  height: 68px;
+  position: absolute;
+  left: 941px;
+  top: 106px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#gt a{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+#bp a{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+#ts a{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+#bj a{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+#ge a{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+
+#shop-cart{
+  font-size: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  position: absolute;
+  left: 94.24%;
+  right: 2.64%;
+  top: 10.94%;
+  bottom: 85.16%;
+}
+
+.Social_Media{
+position: absolute;
+width: 111px;
+height: 25px;
+left: 1168px;
+top: 149px;
+
+}
+
+.Social_Media i{
+  font-size: 25px;
+  font-weight: 100;
+  color: #000;
+}
+
+.Social_Media a{
+  font-size: 40px;
+  font-weight: 100;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(189, 190, 77);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: flex;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.main-content{
+  width: 100%;
+  max-width: 1920px;
+  height: 25em;
+  /* background: linear-gradient(180deg, #000000 0%, rgba(128, 127, 127, 0.609375) 46.5%, rgba(0, 0, 0, 0) 100%); */
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.img-1{
+  background-image: url(../resourses/img/img-1.jpg);
+  /* width: 87.5em; */
+  height: 25em;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+.img-2{
+  background-image: url(../resourses/img/img-2.jpg);
+  /* width: 87.5em; */
+  height: 25em;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+.img-3{
+  background-image: url(../resourses/img/img-3.jpg);
+  /* width: 87.5em; */
+  height: 25em;
+  border-radius: 30px;
+  background-size: cover;
+}
+

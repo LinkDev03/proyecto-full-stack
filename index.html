@@ -3,35 +3,267 @@
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-escalable=no"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="resourses/img/icons/MasterMusicStore-_1_.ico" type="image/x-icon"/> 
     <link rel="stylesheet" href="css/estilos.css"/>
-    <link rel="manifest" href="js/manifest/manifest.json"/>
-    <script type="text/javascript" src="js/prefixfree.min.js"></script>
-    <script  type="text/javascript" src="js/SW.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6adb63d45f.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <title>Proyecto Full Stack</title>
 </head>
 <body>
 
     <!--Inicio Cabecera de Página-->
+    <header>
+        <button class="logo"><a href="index.html"></a><!--<img src="resourses/img/logos/MasterMusicStore.png" alt="logo" name="logo"/>--></button> 
+        <input id="Search" type="text" name="Barra de busqueda"  placeholder=" Buscar en la tienda...">
+        <button id="Search_Button"  type="submit">
+            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        </button>
+        <button class="User_Button"><a href="pagina_1/incio de sesion.html">Acceder o Registrarse</a>
+        <i class="fa-regular fa-circle-user fa-2xl"></i>
+        </button>
+        <nav role="navigation"> 
+            <div id="menuToggle">
+            
+            <input type="checkbox" />  
+            
+            <span></span>
+            <span></span> 
+            <span></span>
 
+            <ul id="menu">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="pagina_2/categorias.html"><li>Categorías</li></a>
+                <a href="#"><li>Guitarras</li></a>
+                <a href="#"><li>Bajos</li></a>
+                <a href="#"><li>Teclados y Sintetizadores</li></a>
+                <a href="#"><li>Baterías y percusión</li></a>
+                <a href="#"><li>Grabación y Estudio</li></a>
+                <a href="#"><li>Accesorios</li></a>
+                <a href="#"><li>Software y Plug-ins</li></a>
+                <a href="#"><li>Sonido e iluminación</li></a>
 
+            </ul>
+            </div>
+        </nav>
+        <nav class="Inert_Buttons">
+            <button id="gt"><a href="#">GUITARRAS</a></button>
+            <button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button>
+            <button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button>
+            <button id="bj"><a href="#">BAJOS</a></button>
+            <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button>
+        </nav>
+        <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <div class="Social_Media">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+    </header>
 
     <!--Fin Cabecera de Página-->
 
-
     <!--Inicio Cuerpo de Página-->
 
+    <!-- sección principal -->
+
+    <main class="principal">
+        <article class="main-content">
+            <div class="img-1">
+                <h2>RUGE CON LA </br> NUEVA SERIE DE </br> AMPLIFICADORES ORANGE </h2>
+                <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+            <div class="img-2">
+                <h2>CONOCE LA NUEVA </br>LINEA DE GUITARRAS ESP</h2>
+                <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+            <div class="img-3">
+                <h2>PRACTICA SIN HACER </br> MUCHO RUIDO CON LA NUEVA LINEA DE </br> PLATILLOS MEINL HCS PRACTICE</h2>
+                <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+        </article>
+    </main>
+
+    <!-- sección de categorías -->
+
+    <div class="decoracion-1"><h2>Categorías</h2></div>
+
+    <section class="S-Categorias">
+        <div class="Guitarras">
+            <a href=""><img src="resourses/img/Guitarras.png" alt="Guitarras" name="Guitarras"></a><a href="#"></a>
+            <p>Guitarras</p>
+        </div>
+        <div class="Bajos">
+            <a href=""><img src="resourses/img/Bajos.png" alt="Bajos" name="Bajos"></a><a href="#"></a>
+            <p>Bajos</p>
+        </div>
+        <div class="Teclados">
+            <a href=""><img src="resourses/img/teclados.png" alt="Teclados" name="Teclados"></a><a href="#"></a>
+            <p>Teclados y Sintetizadores</p>
+        </div>
+        <div class="Baterías">
+            <a href=""><img src="resourses/img/Baterías.png" alt="Baterías" name="Baterías"></a><a href="#"></a>
+            <p>Baterías y  percusión</p>
+        </div>
+        
+        <button class="Boton-Categoria"><a href="pagina_2/categorias.html">Ver Más</a></button>
+    </section>
+    
+    <!-- sección de recomendados -->
+
+    <div class="decoracion-2"><h2>Recomendados</h2></div>
+
+    <section class="S-Recomendados">
+        <button class="boton-derecho"></button>
+        <div><a href=""><img src="resourses/img/productos/producto-1.png" alt="ESP-LTD"></a><a href="#">ESP LTD EC-1000 Duncan Electric Guitar Black Satin 
+            </br>6.660.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-2.png" alt="FENDER-TELE"></a><a href="#">Fender American Professional II Telecaster Maple Fingerboard 
+            </br>10.199.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-3.png" alt="IBANEZ-RG"></a><a href="#">Ibanez RG Series RG470AHM Blue Moon Burst
+            </br>3.550.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-4.png" alt="SLS-EVIL"></a><a href="#">Bajo Schecter SLS Evil Twin-5 - Satin Black 
+        </br>6.900.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-5.png" alt="PEARL-MASTER"></a><a href="#">Pearl Masters Maple 4-piezas Shell Pack - Bombay Gold Sparkle
+        </br>13.410.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-6.png" alt="DW-DESING"></a><a href="#">DW Design Series 4-piezas Shell Pack con Redoblante - Tobacco Burst
+        </br>7.680.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-8.png" alt="MEINL-CLASSICS"></a><a href="#">Meinl Cymbals Classics Custom Bonus Set - 14/16/20 Gratis Crash 18"
+        </br>2.870.000</a>
+        </div>
+        <div><a href=""><img src="resourses/img/productos/producto-7.png" alt="LINE-6"></a><a href="#">Line 6 Helix Guitar Multi-effects Floor Processor
+        </br>7.850.000</a>
+        </div>
+        <button class="boton-izquierdo"></button>
 
 
+    <!-- sección de Marcas -->
 
+    <div class="decoracion-3"><h2>Marcas Populares</h2></div>
 
+    <section class="slider">
+        <button>
+            <a href="https://www.dwdrums.com/" target="_blank"><img src="resourses/img/logos/Drum_worksh_logo.png" alt="DW"/></a>
+        </button>
+        <button>
+            <a href="http://mapexdrums.com/international/" target="_blank"><img src="resourses/img/logos/mapex-logo-54863D0F4F-seeklogo.com.png" alt="MAPEX"/></a>
+        </button>
+        <button>
+            <a href="https://www.tama.com/asia/" target="_blank"><img src="resourses/img/logos/tama-logo-0.png" alt="TAMA"/></a>
+        </button>
+        <button>
+            <a href="https://www.fender.com/es/start" target="_blank"><img src="resourses/img/logos/fender-1-logo-black-and-white.png" alt="FENDER"/></a>
+        </button>
+        <button>
+            <a href="https://www.espguitars.com/" target="_blank"><img src="resourses/img/logos/ESP_Logo.svg.png" alt="ESP"/></a>
+        </button>
+        <button>
+            <a href="https://www.yamaha.com/en/" target="_blank"><img src="resourses/img/logos/Yamaha.png" alt="YAMAHA"/></a>
+        </button>
+        <button>
+            <a href="https://www.korg.com/es/" target="_blank"><img src="resourses/img/logos/1280px-Korg_logo.svg.png" alt="KORG"/></a>
+        </button>
+        <button>
+            <a href="https://prsguitars.com/" target="_blank"><img src="resourses/img/logos/Prs_guitars_logo.png" alt="PRS"/></a>
+        </button>
+        <button>
+            <a href="https://meinlcymbals.com/en/home" target="_blank"><img src="resourses/img/logos/Meinl_cymbals_logo.png" alt="MEINL"/></a>
+        </button>
+        <button>
+            <a href="https://sabian.com/" target="_blank"><img src="resourses/img/logos/sabian logo.png" alt="SABIAN"/></a>
+        </button>
+        <button>
+            <a href="https://www.lpmusic.com/" target="_blank"><img src="resourses/img/logos/marcas-musical-cedar-16.png" alt="LP"/></a>
+        </button>
+        <button>
+            <a href="https://line6.com/" target="_blank"><img src="resourses/img/logos/2560px-Line6_Logo.svg.png" alt="LINE-6"/></a>
+        </button>
+        <button>
+            <a href="https://www.schecterguitars.com/" target="_blank"><img src="resourses/img/logos/schecter-logo.png" alt="Schecter-guitar"></a>
+        </button>
+        <button>
+            <a href="https://www.ibanez.com/na/" target="_blank"><img src="resourses/img/logos/Ibanez_logo.svg.png" alt="Ibanez-guitar"></a>
+        </button>
+        <button>
+            <a href="https://orangeamps.com/es/" target="_blank"><img src="resourses/img/logos/orange-amps-logo.png" alt="Orange-amp"></a>
+        </button>
+        <button>
+            <a href="https://remo.com/" target="_blank"><img src="resourses/img/logos/remo-drumheads-logo.png" alt="Remo-heads"></a>
+        </button>
+        <button>
+            <a href="https://www.daddario.com/products/percussion/evans-drumheads/" target="_blank"><img src="resourses/img/logos/evans-logo.png" alt="Evans-heads"></a>
+        </button>
+        <button>
+            <a href="https://pearldrum.com/global/" target="_blank"><img src="resourses/img/logos/Pearl_drum_logo.png" alt="Pearl-Drums"></a>
+        </button>
+    </section>
+
+    <button><a href="#">Ver Todas</a></button>
+
+    <!-- sección de blog -->
+
+    <div class="decoracion-4"><h2>Visita Nuestro Blog</h2></div>
+
+    <article>
+        <button><a href="#">Entra Aquí</a></button>
+    </article>
 
     <!--Fin Cuerpo de Página-->
 
-
     <!--Inicio de Pie de Página-->
-
+    <footer class="content-f">
+        <div class="">
+            <button id="">
+                <i class="fa-sharp fa-solid fa-angle-up"></i>
+            </button>
+        </div>
+        <div>
+            <h3>Información de Contacto</h3>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Soporte</h3>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Sobre Nosotros</h3>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">vista nuestra fan page</a></li>
+                <li><a href="https://www.youtube.com" target="_blank"> visita nuestro canal de Youtube</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">dale un vistazo a nuestro perfil de Instagram</a></li>
+                <li><a href="#">contactanos por whatsapp</a></li>
+            </ul>
+        </div>
+        <p>Infinix Music Store Todos los derechos reservados &copy;. 2023</p>
+    </footer>
 
 
 
