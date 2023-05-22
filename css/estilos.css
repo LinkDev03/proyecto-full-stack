@@ -12,6 +12,8 @@ body{
   overflow-x: hidden;
 }
 
+/* Inicio Cabezera */
+
 header{
   width: 100%;
   max-width: 1920px;
@@ -64,8 +66,8 @@ header{
 
 .User_Button i{
   color: #ffffff;
-  font-size: 40px;
-  line-height: 1px;
+  font-size: 38px;
+  font-weight: 100;
   text-shadow:  4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -311,6 +313,10 @@ height: 25px;
 {
   transform: none;
 }
+
+/* Fin Cabezera */
+
+/* Inicio Cuerpo de Página */
 
 .main-content{
   width: 100%;
