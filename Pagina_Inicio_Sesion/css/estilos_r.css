@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-image: url(../img/registro_1.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
