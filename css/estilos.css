@@ -23,19 +23,19 @@ header{
 }
 
 .logo /*img*/{ 
+  display: inline-flex;
   background-image: url(../resourses/img/logos/MasterMusicStore.png);
   background-size: cover;
   background-position: center;
   width: 185px;
   height: 90px;
   margin-left: 28px;
-  /* margin-top: 8px; */
+  margin-top: 8px; 
   box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
 #Search{
-  display: flex;
   width: 100%;
   height: 100%;
   max-width: 751px;
@@ -67,15 +67,15 @@ header{
 .User_Button i{
   color: #ffffff;
   font-size: 38px;
-  font-weight: 100;
+  font-weight: 600;
   text-shadow:  4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
 .User_Button a{
   font-size: 20px;
-  font-weight: 600;
   text-decoration: none;
-  color: #ffffff;
+  font-weight: 500;
+  color: #000;
 }
 
 .Inert_Buttons{
@@ -131,7 +131,7 @@ header{
 }
 
 #gt a{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -139,28 +139,28 @@ header{
 }
 
 #bp a{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none; 
   color: #000;
 }
 #ts a{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none; 
   color: #000;
 }
 #bj a{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none; 
   color: #000;
 }
 #ge a{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none; 
@@ -171,6 +171,7 @@ header{
   font-size: 50px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  stroke: #000;
 }
 
 .Social_Media{
@@ -318,36 +319,75 @@ height: 25px;
 
 /* Inicio Cuerpo de Página */
 
-.main-content{
+.slider{
   width: 100%;
   max-width: 1920px;
-  height: 25em;
-  /* background: linear-gradient(180deg, #000000 0%, rgba(128, 127, 127, 0.609375) 46.5%, rgba(0, 0, 0, 0) 100%); */
+  margin: auto;
+  height: 600px;
+  overflow: hidden;
   border-radius: 30px;
-  color: #ffffff;
 }
 
-.img-1{
-  background-image: url(../resourses/img/img-1.jpg);
-  /* width: 87.5em; */
-  height: 25em;
+.slider ul{
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  width: 300%;
+
+  animation: slider 15s infinite;
+}
+
+
+.slider li{
+  width: 100%;
+  height: 400px;
+  list-style: none;
   border-radius: 30px;
+}
+
+
+#slider-1{
+  background: url(../resourses/img/img-1.jpg) no-repeat;
   background-size: cover;
 }
 
-.img-2{
-  background-image: url(../resourses/img/img-2.jpg);
-  /* width: 87.5em; */
-  height: 25em;
-  border-radius: 30px;
+#slider-1 h2{
+  color: #fff;
+  
+}
+
+#slider-2{
+  background: url(../resourses/img/img-2.jpg) no-repeat;
   background-size: cover;
 }
 
-.img-3{
-  background-image: url(../resourses/img/img-3.jpg);
-  /* width: 87.5em; */
-  height: 25em;
-  border-radius: 30px;
+#slider-2 h2{
+  color: #fff;
+}
+
+#slider-3{
+  background: url(../resourses/img/img-3.jpg) no-repeat;
   background-size: cover;
 }
+
+#slider-3 h2{
+  color: #fff;
+}
+
+
+@keyframes slider{
+  0%{margin-left: 0;}
+  15%{margin-left: 0;}
+
+  30%{margin-left: -100%}
+  45%{margin-left: -100%;}
+
+  60%{margin-left: -200%;}
+  75%{margin-left: -200%;}
+
+  90%{margin-left: 0;}
+
+}
+
+/* inicio panel de categorias principal */
 

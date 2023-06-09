@@ -15,7 +15,8 @@
 </head>
 <body>
 
-    <!--Inicio Cabecera de Página-->
+    <!--Inicio Cabecera de Página--> 
+    
     <header>
         <a href="index.html"><div class="logo"><!--<img src="resourses/img/logos/MasterMusicStore.png" alt="logo" name="logo"/>--></div></a> 
         <input id="Search" type="text" name="Barra de busqueda"  placeholder=" Buscar en la tienda...">
@@ -23,7 +24,7 @@
             <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
         </button>
         <button class="User_Button"><a href="Pagina_Inicio_Sesion/incio de sesion.html">Acceder o Registrarse</a>
-        <i class="fa-regular fa-circle-user fa-2xl"></i>
+            <i class="fa-solid fa-circle-user"></i>
         </button>
         <nav role="navigation"> 
             <div id="menuToggle">
@@ -50,18 +51,22 @@
             </div>
         </nav>
         <nav class="Inert_Buttons">
-            <button id="gt"><a href="#">GUITARRAS</a></button>
-            <button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button>
-            <button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button>
-            <button id="bj"><a href="#">BAJOS</a></button>
-            <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button>
+           <ul>
+            <li><button id="gt"><a href="#">GUITARRAS</a></button></li>
+            <li><button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button></li>
+            <li><button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button></li>
+            <li><button id="bj"><a href="#">BAJOS</a></button></li>
+            <li> <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button></li>
+           </ul>
         </nav>
         <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
         <div class="Social_Media">
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
         </div>
     </header>
 
@@ -72,20 +77,23 @@
     <!-- sección principal -->
 
     <main class="principal">
-        <article class="main-content">
-            <div class="img-1">
-                <h2>RUGE CON LA </br> NUEVA SERIE DE </br> AMPLIFICADORES ORANGE </h2>
-                <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
-            </div>
-            <div class="img-2">
-                <h2>CONOCE LA NUEVA </br>LINEA DE GUITARRAS ESP</h2>
-                <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
-            </div>
-            <div class="img-3">
-                <h2>PRACTICA SIN HACER </br> MUCHO RUIDO CON LA NUEVA LINEA DE </br> PLATILLOS MEINL HCS PRACTICE</h2>
-                <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
-            </div>
-        </article>
+        <section class="slider">
+            <ul>
+                <li id="slider-1">
+                    <h2>RUGE CON LA </br> NUEVA SERIE DE </br> AMPLIFICADORES ORANGE </h2>
+                    <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+                    
+                </li>
+                <li id="slider-2">
+                    <h2>CONOCE LA</br> NUEVA LINEA DE </br> GUITARRAS ESP </h2>
+                    <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+                </li>
+                <li id="slider-3">
+                    <h2>PRACTICA SIN HACER </br> MUCHO RUIDO CON LA NUEVA LINEA DE </br> PLATILLOS MEINL HCS PRACTICE</h2>
+                    <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <!-- sección de categorías -->
@@ -110,7 +118,7 @@
             <p>Baterías y  percusión</p>
         </div>
         
-        <button class="Boton-Categoria"><a href="pagina_2/categorias.html">Ver Más</a></button>
+        <button class="Boton-Categoria"><a href="Pagina_Categorias/categorias.html">Ver Más</a></button>
     </section>
     
     <!-- sección de recomendados -->
@@ -151,60 +159,62 @@
     <div class="decoracion-3"><h2>Marcas Populares</h2></div>
 
     <section class="slider">
-        <button>
-            <a href="https://www.dwdrums.com/" target="_blank"><img src="resourses/img/logos/Drum_worksh_logo.png" alt="DW"/></a>
-        </button>
-        <button>
-            <a href="http://mapexdrums.com/international/" target="_blank"><img src="resourses/img/logos/mapex-logo-54863D0F4F-seeklogo.com.png" alt="MAPEX"/></a>
-        </button>
-        <button>
-            <a href="https://www.tama.com/asia/" target="_blank"><img src="resourses/img/logos/tama-logo-0.png" alt="TAMA"/></a>
-        </button>
-        <button>
-            <a href="https://www.fender.com/es/start" target="_blank"><img src="resourses/img/logos/fender-1-logo-black-and-white.png" alt="FENDER"/></a>
-        </button>
-        <button>
-            <a href="https://www.espguitars.com/" target="_blank"><img src="resourses/img/logos/ESP_Logo.svg.png" alt="ESP"/></a>
-        </button>
-        <button>
-            <a href="https://www.yamaha.com/en/" target="_blank"><img src="resourses/img/logos/Yamaha.png" alt="YAMAHA"/></a>
-        </button>
-        <button>
-            <a href="https://www.korg.com/es/" target="_blank"><img src="resourses/img/logos/1280px-Korg_logo.svg.png" alt="KORG"/></a>
-        </button>
-        <button>
-            <a href="https://prsguitars.com/" target="_blank"><img src="resourses/img/logos/Prs_guitars_logo.png" alt="PRS"/></a>
-        </button>
-        <button>
-            <a href="https://meinlcymbals.com/en/home" target="_blank"><img src="resourses/img/logos/Meinl_cymbals_logo.png" alt="MEINL"/></a>
-        </button>
-        <button>
-            <a href="https://sabian.com/" target="_blank"><img src="resourses/img/logos/sabian logo.png" alt="SABIAN"/></a>
-        </button>
-        <button>
-            <a href="https://www.lpmusic.com/" target="_blank"><img src="resourses/img/logos/marcas-musical-cedar-16.png" alt="LP"/></a>
-        </button>
-        <button>
-            <a href="https://line6.com/" target="_blank"><img src="resourses/img/logos/2560px-Line6_Logo.svg.png" alt="LINE-6"/></a>
-        </button>
-        <button>
-            <a href="https://www.schecterguitars.com/" target="_blank"><img src="resourses/img/logos/schecter-logo.png" alt="Schecter-guitar"></a>
-        </button>
-        <button>
-            <a href="https://www.ibanez.com/na/" target="_blank"><img src="resourses/img/logos/Ibanez_logo.svg.png" alt="Ibanez-guitar"></a>
-        </button>
-        <button>
-            <a href="https://orangeamps.com/es/" target="_blank"><img src="resourses/img/logos/orange-amps-logo.png" alt="Orange-amp"></a>
-        </button>
-        <button>
-            <a href="https://remo.com/" target="_blank"><img src="resourses/img/logos/remo-drumheads-logo.png" alt="Remo-heads"></a>
-        </button>
-        <button>
-            <a href="https://www.daddario.com/products/percussion/evans-drumheads/" target="_blank"><img src="resourses/img/logos/evans-logo.png" alt="Evans-heads"></a>
-        </button>
-        <button>
-            <a href="https://pearldrum.com/global/" target="_blank"><img src="resourses/img/logos/Pearl_drum_logo.png" alt="Pearl-Drums"></a>
-        </button>
+        <div class="slider-content">
+            <button>
+                <a href="https://www.dwdrums.com/" target="_blank"><img src="resourses/img/logos/Drum_worksh_logo.png" alt="DW"/></a>
+            </button>
+            <button>
+                <a href="http://mapexdrums.com/international/" target="_blank"><img src="resourses/img/logos/mapex-logo-54863D0F4F-seeklogo.com.png" alt="MAPEX"/></a>
+            </button>
+            <button>
+                <a href="https://www.tama.com/asia/" target="_blank"><img src="resourses/img/logos/tama-logo-0.png" alt="TAMA"/></a>
+            </button>
+            <button>
+                <a href="https://www.fender.com/es/start" target="_blank"><img src="resourses/img/logos/fender-1-logo-black-and-white.png" alt="FENDER"/></a>
+            </button>
+            <button>
+                <a href="https://www.espguitars.com/" target="_blank"><img src="resourses/img/logos/ESP_Logo.svg.png" alt="ESP"/></a>
+            </button>
+            <button>
+                <a href="https://www.yamaha.com/en/" target="_blank"><img src="resourses/img/logos/Yamaha.png" alt="YAMAHA"/></a>
+            </button>
+            <button>
+                <a href="https://www.korg.com/es/" target="_blank"><img src="resourses/img/logos/1280px-Korg_logo.svg.png" alt="KORG"/></a>
+            </button>
+            <button>
+                <a href="https://prsguitars.com/" target="_blank"><img src="resourses/img/logos/Prs_guitars_logo.png" alt="PRS"/></a>
+            </button>
+            <button>
+                <a href="https://meinlcymbals.com/en/home" target="_blank"><img src="resourses/img/logos/Meinl_cymbals_logo.png" alt="MEINL"/></a>
+            </button>
+            <button>
+                <a href="https://sabian.com/" target="_blank"><img src="resourses/img/logos/sabian logo.png" alt="SABIAN"/></a>
+            </button>
+            <button>
+                <a href="https://www.lpmusic.com/" target="_blank"><img src="resourses/img/logos/marcas-musical-cedar-16.png" alt="LP"/></a>
+            </button>
+            <button>
+                <a href="https://line6.com/" target="_blank"><img src="resourses/img/logos/2560px-Line6_Logo.svg.png" alt="LINE-6"/></a>
+            </button>
+            <button>
+                <a href="https://www.schecterguitars.com/" target="_blank"><img src="resourses/img/logos/schecter-logo.png" alt="Schecter-guitar"></a>
+            </button>
+            <button>
+                <a href="https://www.ibanez.com/na/" target="_blank"><img src="resourses/img/logos/Ibanez_logo.svg.png" alt="Ibanez-guitar"></a>
+            </button>
+            <button>
+                <a href="https://orangeamps.com/es/" target="_blank"><img src="resourses/img/logos/orange-amps-logo.png" alt="Orange-amp"></a>
+            </button>
+            <button>
+                <a href="https://remo.com/" target="_blank"><img src="resourses/img/logos/remo-drumheads-logo.png" alt="Remo-heads"></a>
+            </button>
+            <button>
+                <a href="https://www.daddario.com/products/percussion/evans-drumheads/" target="_blank"><img src="resourses/img/logos/evans-logo.png" alt="Evans-heads"></a>
+            </button>
+            <button>
+                <a href="https://pearldrum.com/global/" target="_blank"><img src="resourses/img/logos/Pearl_drum_logo.png" alt="Pearl-Drums"></a>
+            </button>
+        </div>
     </section>
 
     <button><a href="#">Ver Todas</a></button>
@@ -213,9 +223,9 @@
 
     <div class="decoracion-4"><h2>Visita Nuestro Blog</h2></div>
 
-    <article>
-        <button><a href="#">Entra Aquí</a></button>
-    </article>
+    <aside>
+        <button><a href="pagina_3/pagina_3.html" target="_blank">Entra Aquí</a></button>
+    </aside>
 
     <!--Fin Cuerpo de Página-->
 

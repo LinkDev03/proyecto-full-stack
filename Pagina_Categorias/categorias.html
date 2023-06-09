@@ -25,13 +25,7 @@
   <body>
     <!--Inicio Cabecera de Página-->
     <header>
-      <div class="logo">
-        <a href="../index.html"
-          ><img
-            src="../resourses/img/logos/MasterMusicStore.png"
-            alt="logo"
-            name="logo"
-        /></a>
+      <a href="../index.html"><div class="logo"></div></a> 
       </div>
       <input
         id="Search"
@@ -69,35 +63,19 @@
         </div>
       </nav>
       <nav class="Inert_Buttons">
-        <button><a href="#">GUITARRAS</a></button>
-        <button><a href="#">BATERÍAS Y PERCUSION</a></button>
-        <button><a href="#">TECLADOS Y SINTETIZADORES</a></button>
-        <button><a href="#">BAJOS</a></button>
-        <button><a href="#">GRABACIÓN Y ESTUDIO</a></button>
-      </nav>
-      <button>
-        <i class="fa-sharp fa-solid fa-cart-shopping"><a href="#"></a></i>
-      </button>
-      <div class="Social_Media">
-        <button>
-          <a href="https://www.facebook.com" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-        </button>
-        <button>
-          <a href="https://www.youtube.com" target="_blank"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </button>
-        <button>
-          <a href="https://www.instagram.com" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </button>
-        <button>
-          <a href="#"></a><i class="fa-brands fa-square-whatsapp"></i>
-        </button>
-      </div>
+        <button id="gt"><a href="#">GUITARRAS</a></button>
+        <button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button>
+        <button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button>
+        <button id="bj"><a href="#">BAJOS</a></button>
+        <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button>
+    </nav>
+    <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+    <div class="Social_Media">
+    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+    </div>
     </header>
 
     <!--Fin Cabecera de Página-->
@@ -105,13 +83,13 @@
     <!--Inicio Cuerpo de Página-->
 
     <!-- sección categorías -->
-    <div>
+    <div id="barra-categorias">
       <h2>Categorías</h2>
     </div>
 
     <section class="guitar">
       <div>
-        <img src="../resourses/img/Guitarras.png" alt="Guitar" name="Guitar" />
+        <div id="img-container-gr"><img src="../resourses/img/Guitarras.png" alt="Guitar" name="Guitar" /></div>
       </div>
       <ul>
         <li><a href="#">Guitarras Eléctricas</a></li>
@@ -131,7 +109,7 @@
 
     <section class="bass">
       <div>
-        <img src="../resourses/img/Bajos.png" alt="bass" name="bass" />
+        <div id="img-container-ba"><img src="../resourses/img/Bajos.png" alt="bass" name="bass" /></div>
       </div>
       <ul>
         <li><a href="#">Bajos Eléctricos</a></li>
@@ -151,7 +129,7 @@
 
     <section class="keys">
       <div>
-        <img src="../resourses/img/teclados.png" alt="keys" name="keys" />
+        <div id="img-container-ky"><img src="../resourses/img/teclados.png" alt="keys" name="keys" /></div>
       </div>
       <ul>
         <li><a href="#">Pianos</a></li>
@@ -171,7 +149,7 @@
 
     <section class="drums">
       <div>
-        <img src="../resourses/img/Baterías.png" alt="drums" name="drums" />
+        <div id="img-container-dr"><img src="../resourses/img/Baterías.png" alt="drums" name="drums" /></div>
       </div>
       <ul>
         <li><a href="#">Baterías Acústicas</a></li>

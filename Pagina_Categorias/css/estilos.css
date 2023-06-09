@@ -11,6 +11,186 @@ body {
   overflow-x: hidden;
 }
 
+header{
+  width: 100%;
+  max-width: 1920px;
+  height: 15em;
+  background-color: #DFE238;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.logo{
+  display: inline-flex;
+  background-image: url(../../resourses/img/logos/MasterMusicStore.png);
+  background-size: cover;
+  background-position: center;
+  width: 185px;
+  height: 90px;
+  margin-left: 28px;
+  margin-top: 8px; 
+  box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#Search{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 751px;
+  max-height: 63px;
+  padding-inline-start: 30px;
+  outline: none;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-style: none;
+}
+
+#Search_Button{
+  background: rgba(254, 158, 44, 0.85);
+  border-radius: 10px;
+  width: 64px;
+  height: 64px;
+  border-style: none;
+}
+
+.User_Button{
+  width: 280px;
+  height: 68px;
+  background: #CFD235;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+
+}
+
+.User_Button i{
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 600;
+  text-shadow:  4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.User_Button a{
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+
+.Inert_Buttons{
+  display: flex;
+  align-content: space-evenly;
+}
+
+#gt{
+  width: 165px;
+  height: 68px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#bp{
+  width: 165px;
+  height: 68px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#ts{
+  width: 100%;
+  width: 100%;
+  max-width: 165px;
+  max-height: 68px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#bj{
+  width: 165px;
+  height: 68px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#ge{
+  width: 165px;
+  height: 68px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#gt a{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+#bp a{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+#ts a{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+#bj a{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+#ge a{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+}
+
+#shop-cart{
+  font-size: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  stroke: #000;
+}
+
+.Social_Media{
+width: 111px;
+height: 25px;
+
+}
+
+.Social_Media i{
+  font-size: 25px;
+  font-weight: 100;
+  color: #000;
+}
+
+.Social_Media a{
+  font-size: 40px;
+  font-weight: 100;
+}
+
+
 #menuToggle {
   display: block;
   position: relative;
@@ -115,4 +295,73 @@ body {
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+
+
+/* inicio categorias */
+
+#barra-categorias{
+  background-color:rgb(223, 226, 56);
+  border-radius: 30px;
+  margin-top: 15px;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+#barra-categorias h2{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+
+.guitar{
+  width: 100%;
+  height: 230px;
+  margin-top: 70px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+}
+
+#img-container-gr{
+  width: 278px;
+  height: 230px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+}
+
+#img-container-gr img{
+  width: 134px;
+  height: 188px;
+  margin: 16px 62px;
+}
+
+/* .guitar ul{
+} */
+
+.bass{
+  width: 100%;
+  height: 230px;
+  margin-top: 70px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+}
+
+#img-container-ba{
+  width: 278px;
+  height: 230px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+}
+
+#img-container-ba img{
+  width: 178px;
+  height: 178px;
+  margin: 16px 30px;
 }
