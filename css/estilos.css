@@ -78,10 +78,11 @@ header{
   color: #000;
 }
 
-.Inert_Buttons{
+/* .Inert_Buttons ul{
   display: flex;
-  align-content: space-evenly;
-}
+  list-style: none;
+  justify-content: center;
+} */
 
 #gt{
   width: 165px;
@@ -90,6 +91,7 @@ header{
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
+  margin-right: 40px;
 }
 
 #bp{
@@ -99,17 +101,17 @@ header{
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
+  margin-right: 40px;
 }
 
 #ts{
-  width: 100%;
-  width: 100%;
-  max-width: 165px;
-  max-height: 68px;
+  width: 165px;
+  height: 68px;
   background: #DFE238;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
+  margin-right: 40px;
 }
 
 #bj{
@@ -119,6 +121,7 @@ header{
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
+  margin-right: 40px;
 }
 
 #ge{
@@ -172,12 +175,30 @@ header{
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   stroke: #000;
+  position: absolute;
+left: 94.24%;
+right: 2.64%;
+top: 10.94%;
+bottom: 85.16%;
+
 }
 
 .Social_Media{
 width: 111px;
 height: 25px;
+/* position: absolute;
+width: 111px;
+height: 25px;
+left: 1168px;
+top: 149px;*/
+} 
 
+.Social_Media ul{
+  list-style: none;
+  display: flex;
+}
+.Social_Media li{
+  flex-flow: wrap column;
 }
 
 .Social_Media i{
@@ -319,7 +340,11 @@ height: 25px;
 
 /* Inicio Cuerpo de Página */
 
-.slider{
+.principal{
+  height: 400px;
+}
+
+.sliders{
   width: 100%;
   max-width: 1920px;
   margin: auto;
@@ -328,7 +353,7 @@ height: 25px;
   border-radius: 30px;
 }
 
-.slider ul{
+.sliders ul{
   margin-top: 20px;
   padding: 0;
   display: flex;
@@ -338,7 +363,7 @@ height: 25px;
 }
 
 
-.slider li{
+.sliders li{
   width: 100%;
   height: 400px;
   list-style: none;
@@ -391,3 +416,254 @@ height: 25px;
 
 /* inicio panel de categorias principal */
 
+.decoracion-1{
+  width: 100%;
+  height: 80px;
+  max-width: 1871px;
+  background: #DFE238;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-top: 44px;
+  margin-left: 19px;
+}
+
+.decoracion-1 h2{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.S-Categorias{
+  width: 100%;
+  height: 278px;
+  max-width: 1871px;
+  margin-top: 50px;
+  margin-left: 19px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.25), inset 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.S-Categorias ul{
+  list-style: none;
+  display: flex;
+}
+
+.Guitarras, .Bajos, .Teclados, .Baterias{
+  width: 230px;
+  height: 177px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.Guitarras img{
+  width: 134px;
+  height: 188px;
+}
+
+.Bajos img{
+  width: 178px;
+  height: 178px;
+}
+
+.Teclados img{
+  width: 222px;
+  height: 194px;
+}
+
+
+.Baterias img{
+  width: 201px;
+  height: 132px;
+  object-fit: scale-down;
+}
+
+/* slider de recomendados */
+
+.slider-1-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 266px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-1 {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  margin-left: 36px;
+}
+
+.slide-1{
+  width: 302px;
+  height: 148px;
+  margin-left: 30px;
+  margin-right: 16px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8{
+  width: 302px;
+  height: 148px; 
+  background: #fff;
+  border-radius: 10px;
+}
+
+.img-1 img{
+  width: 101px;
+  height: 142px;
+  margin: 1px 85px;
+  object-fit: scale-down;
+}
+
+.slide-1 > p, a{
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.img-2 img{
+  width: 110px;
+  height: 154px;
+  margin: 1px 85px;
+  object-fit: scale-down;
+}
+
+.img-3 img{
+  width: 115px;
+  height: 159px;
+  margin: 1px 85px;
+  object-fit: scale-down;
+}
+
+.img-4 img{
+  width: 98px;
+  height: 147px;
+  margin: 1px 85px;
+  object-fit: scale-down;
+}
+
+.img-5 img{
+  width: 161px;
+  height: 139px;
+  margin: 1px 85px;
+  object-fit: scale-down;
+}
+
+.img-6 img{
+  width: 193px;
+  height: 141px;
+  margin: 1px 65px;
+  object-fit: scale-down;
+}
+
+.img-7 img{
+  width: 180px;
+  height: 150px;
+  margin: 1px 65px;
+  object-fit: scale-down;
+}
+
+.img-8 img{
+  width: 194px;
+  height: 141px;
+  margin: 1px 55px;
+  object-fit: scale-down;
+}
+
+.prev-btn-1,
+.next-btn-1 {
+  position: absolute;
+  top: calc(50% - 24px);
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: #000;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn-1 {
+  left: 16px;
+}
+
+.next-btn-1 {
+  right: 16px;
+}
+
+/* slider de marcas */
+
+.slider-container {
+  width: 975px;
+  height: 197px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  margin-left: 11px;
+}
+
+.slider {
+  width: calc(147px * 18 + 6px * 17);
+  height: 134px;
+  margin-top: 36px;
+  padding: 0 30px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  width: 147px;
+  height: 134px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.slide button{
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide img{
+  width: 147px;
+  height: 134px;
+  object-fit: scale-down;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
