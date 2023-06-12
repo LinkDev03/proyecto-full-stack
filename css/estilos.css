@@ -589,10 +589,15 @@ height: 25px;
   right: 16px;
 }
 
+
+.decoracion-2{
+
+}
 /* slider de marcas */
 
 .slider-container {
-  width: 975px;
+  width: 100%;
+  max-width: 875px;
   height: 197px;
   background: #F3F3F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -656,4 +661,73 @@ height: 25px;
 
 .next-btn {
   right: 20px;
+}
+
+
+
+
+
+
+
+
+/* seccion blog */
+
+.blog{ 
+  width: 380px;
+  height: 380px;
+  background: url(../resourses/img/foto-blog-web.jpg);
+  border-radius: 44px;
+  background-size: cover; 
+}
+
+
+.blog button{
+  width: 220px;
+  height: 49px;
+  background: #F3F3F3;
+  mix-blend-mode: multiply;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+  border: none;
+}
+
+.blog a{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* footer menu */
+
+
+.footer-contain {
+  column-count: 4; 
+  column-gap: 10px; 
+}
+
+.footer-titulo {
+  break-inside: avoid-column; 
+}
+
+.footer-titulo ul {
+  display: none;
+  list-style: none;
+}
+
+.footer-titulo.mostrar ul {
+  display: block;
+}
+
+#mas-informacion{
+
+  margin-top: 20px;
+
+}
+
+
+
+#final{
+  margin-top: 15px;
+  text-align: center;
 }

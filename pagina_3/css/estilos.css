@@ -5,3 +5,12 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background: #e1dddd;
+    overflow-x: hidden;
+}
+
+.cabezal{
+    background: #DFE238;
+}

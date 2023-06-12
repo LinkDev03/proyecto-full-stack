@@ -317,7 +317,7 @@ height: 25px;
   padding-bottom: 30px;
 }
 
-.guitar{
+.guitar, .bass, .keys, .drums, .recording, .accsesories, .software, .sound{
   width: 100%;
   height: 230px;
   margin-top: 70px;
@@ -326,7 +326,10 @@ height: 25px;
   border-radius: 60px;
 }
 
-#img-container-gr{
+#img-container-gr, #img-container-ba, 
+#img-container-ky, #img-container-dr, 
+#img-container-rg, #img-container-accs, 
+#img-container-sw, #img-container-sd{
   width: 278px;
   height: 230px;
   background: #FFFFFF;
@@ -340,28 +343,209 @@ height: 25px;
   margin: 16px 62px;
 }
 
-/* .guitar ul{
-} */
-
-.bass{
-  width: 100%;
-  height: 230px;
-  margin-top: 70px;
-  background: #F3F3F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 60px;
-}
-
-#img-container-ba{
-  width: 278px;
-  height: 230px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 60px;
-}
 
 #img-container-ba img{
   width: 178px;
   height: 178px;
   margin: 16px 30px;
+}
+
+#img-container-ky img{
+  width: 272px;
+  height: 239px;
+}
+
+
+#img-container-dr img{
+  width: 258px;
+  height: 180px;
+  object-fit: scale-down;
+  margin: 20px 2px;
+}
+
+#img-container-rg img{
+  width: 308px;
+  height: 190px;
+  object-fit: scale-down;
+  margin: 20px -18px 0;
+}
+
+#img-container-accs img{
+  width: 308px;
+  height: 190px;
+  object-fit: scale-down;
+  margin-top: 20px;
+}
+
+
+#img-container-sw img{
+  width: 272px;
+  height: 199px;
+  object-fit: scale-down;
+  margin-top: 15px;
+}
+
+#img-container-sd img{
+  width: 250px;
+  height: 250px;
+  object-fit: scale-down;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decoracion-pr{
+  width: 100%;
+  height: 80px;
+  max-width: 1844px;
+  background: #DFE238;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+  margin: 20px  20px 20px 30px;
+}
+
+.decoracion-pr h2{
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* slider marcas */
+
+.slider-container {
+  width: 100%;
+  max-width: 1844px;
+  height: 197px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  margin-left: 28px;
+}
+
+.slider {
+  width: calc(147px * 18 + 6px * 17);
+  height: 134px;
+  margin-top: 36px;
+  padding: 0 30px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  width: 147px;
+  height: 134px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.slide button{
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide img{
+  width: 147px;
+  height: 134px;
+  object-fit: scale-down;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+
+
+
+/* footer menu */
+
+
+footer{
+  height: 111px;
+  background: #FFFBFB;
+  border-top: 1px solid #000000;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: 40px;
+}
+
+
+.footer-contain {
+  column-count: 4; 
+  column-gap: 10px; 
+  background: #FFFBFB;
+}
+
+.footer-titulo {
+  break-inside: avoid-column; 
+  background: #FFFBFB;
+}
+
+.footer-titulo ul {
+  display: none;
+  list-style: none;
+  background: #FFFBFB;
+}
+
+.footer-titulo a{
+  color: #000;
+  text-decoration: none;
+}
+.footer-titulo.mostrar ul {
+  display: block;
+}
+
+#mas-informacion{
+  width: 200px;
+  height: 39px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+
+#final{
+  background: #FFFBFB;
+  margin-top: 15px;
+  text-align: center;
 }
