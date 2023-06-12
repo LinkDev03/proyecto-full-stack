@@ -20,6 +20,9 @@
     <title>Document</title>
 </head>
 <body>
+
+<a href="index.html"><i id="boton-inicio" class="fa-solid fa-house"></i></a>
+
     <a href="index.html#section-respuestas">   
         <img class="home" src="img/hogar.png" alt="">
     </a>
