@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="../resourses/img/icons/img3.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script src="https://kit.fontawesome.com/6adb63d45f.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
