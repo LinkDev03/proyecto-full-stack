@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/calculadora.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="shortcut icon" href="../resourses/img/icons/img3.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6adb63d45f.js" crossorigin="anonymous"></script>
     <title>Calculadora</title>
 </head>
