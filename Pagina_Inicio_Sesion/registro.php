@@ -39,7 +39,7 @@
     <!--Inicio Cuerpo de Página-->
 
     <button>
-      <a href="../Pagina_Inicio_Sesion/incio de sesion.html">Acceder</a>
+      <a href="../Pagina_Inicio_Sesion/incio de sesion.php">Acceder</a>
     </button>
     <!--Fin Cuerpo de Página-->
 

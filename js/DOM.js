@@ -3,7 +3,7 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const slides = document.querySelectorAll('.slide');
 const slideWidth = slides[0].offsetWidth;
-const numVisibleSlides = 5;
+const numVisibleSlides = 5.5;
 var currentSlide = 0;
 
 sslider.style.width = `${slideWidth * numVisibleSlides + (numVisibleSlides - 1) * 6}px`;

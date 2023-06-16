@@ -1,3 +1,11 @@
+<?php
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en-es">
 <head>
@@ -10,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6adb63d45f.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <title>Proyecto Full Stack</title>
 </head>
 <body>
@@ -18,12 +25,17 @@
     <!--Inicio Cabecera de Página--> 
     
     <header>
-        <a href="index.html"><div class="logo"><!--<img src="resourses/img/logos/MasterMusicStore.png" alt="logo" name="logo"/>--></div></a> 
-        <input id="Search" type="text" name="Barra de busqueda"  placeholder=" Buscar en la tienda...">
-        <button id="Search_Button"  type="submit">
-            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        <a href="index.php"><div class="logo"><!--<img src="resourses/img/logos/MasterMusicStore.png" alt="logo" name="logo"/>--></div></a> 
+        <div class="search">
+        <form  action=" " metod= "get">
+        <input id="Search-bar" type="text" name="Barra de busqueda"  placeholder=" Buscar en la tienda...">
+        <button id="btn" type="submit"> 
+          <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
         </button>
-        <button class="User_Button"><a href="Pagina_Inicio_Sesion/incio de sesion.html">Acceder o Registrarse</a>
+        </form> 
+        </div>
+        
+        <button class="User_Button"><a href="Pagina_Inicio_Sesion/incio de sesion.php">Acceder o Registrarse</a>
             <i class="fa-solid fa-circle-user"></i>
         </button>
         <nav role="navigation"> 
@@ -36,8 +48,8 @@
             <span></span>
 
             <ul id="menu">
-                <a href="index.html"><li>Inicio</li></a>
-                <a href="Pagina_Categorias/categorias.html"><li>Categorías</li></a>
+                <a href="index.php"><li>Inicio</li></a>
+                <a href="Pagina_Categorias/categorias.php"><li>Categorías</li></a>
                 <a href="#"><li>Guitarras</li></a>
                 <a href="#"><li>Bajos</li></a>
                 <a href="#"><li>Teclados y Sintetizadores</li></a>
@@ -46,6 +58,7 @@
                 <a href="#"><li>Accesorios</li></a>
                 <a href="#"><li>Software y Plug-ins</li></a>
                 <a href="#"><li>Sonido e iluminación</li></a>
+                <a href="pagina_3/pagina_3.html" target="_blank"><li>visita nuestro blog</li></a>
 
             </ul>
             </div>
@@ -103,23 +116,27 @@
     <section class="S-Categorias">
       <ul>
         <li><div class="Guitarras">
-            <a href=""><img src="resourses/img/Guitarras.png" alt="Guitarras" name="Guitarras"></a><a href="#"></a>
+            <a href=""><img src="resourses/img/Guitarras.png" alt="Guitarras" name="Guitarras"></a>
+            <p><a href=" ">Guitarras</a></p>
         </div>
-        <p>Guitarras</p></li>
+       </li>
         <li><div class="Bajos">
-            <a href=""><img src="resourses/img/Bajos.png" alt="Bajos" name="Bajos"></a><a href="#"></a>
+            <a href=""><img src="resourses/img/Bajos.png" alt="Bajos" name="Bajos"></a>
+            <p><a href="">Bajos</a></p>
         </div>
-        <p>Bajos</p></li>
+        </li>
         <li><div class="Teclados">
-            <a href=""><img src="resourses/img/teclados.png" alt="Teclados" name="Teclados"></a><a href="#"></a>
+            <a href=""><img src="resourses/img/teclados.png" alt="Teclados" name="Teclados"></a>
+            <p><a href=" ">Teclados y Sintetizadores</a></p>
         </div>
-        <p>Teclados y Sintetizadores</p></li>
+        </li>
         <li><div class="Baterias">
-            <a href=""><img src="resourses/img/Baterías.png" alt="Baterías" name="Baterías"></a><a href="#"></a>
+            <a href=""><img src="resourses/img/Baterías.png" alt="Baterías" name="Baterías"></a>
+            <p><a href=" ">Baterías y  percusión</a></p>
         </div>
-        <p>Baterías y  percusión</p></li>
-         </ul>
-        <button class="Boton-Categoria"><a href="Pagina_Categorias/categorias.html">Ver Más <i class="fa-solid fa-arrow-right"></i></a></button>
+        </li> 
+        <button class="Boton-Categoria"><a href="Pagina_Categorias/categorias.php">Ver Más <div id="circle"><i class="fa-solid fa-chevron-right"></i></div></a></button>
+        </ul>
     </section>
     
     <!-- sección de recomendados -->
@@ -277,7 +294,7 @@
             </div>
           </div>
 
-    <button><a href="#">Ver Todas</a></button>
+    <button id="boton-marcas" type="submit"><a href="">Ver Todas</a></button>
 
     <!-- sección de blog -->
 
@@ -298,7 +315,7 @@
           <ul>
             <li>Dirección: 123 Calle Principal</li>
             <li>Teléfono: 555-123456</li>
-            <li>Email: info@example.com</li>
+            <li><a href="">Email:info@example.com</a></li>
             <li>Horario: Lunes a Viernes, 9am-5pm</li>
           </ul>
         </div>
@@ -306,10 +323,10 @@
         <div class="footer-titulo">
           <h3>Soporte</h3>
           <ul>
-            <li>Preguntas frecuentes</li>
-            <li>Programa de devoluciones</li>
-            <li>Reportar un problema</li>
-            <li>Contactar al soporte</li>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Programa de devoluciones</a></li>
+            <li><a href="">Reportar un problema</a></li>
+            <li><a href="">Contactar al soporte</a></li>
           </ul>
         </div>
         

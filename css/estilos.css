@@ -35,22 +35,43 @@ header{
   border-radius: 10px;
 }
 
-#Search{
+.search{
+  width: 760px;
+  height: 64px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.search form{
+  width: 760px;
+  height: 64px;
+  
+}
+
+#Search-bar{
   width: 100%;
   height: 100%;
+  display: inline-block;
   max-width: 751px;
-  max-height: 63px;
-  padding-inline-start: 30px;
+  max-height: 64px;
+  padding-inline-start: 10px;
+  padding-right: 64px;
   outline: none;
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border-style: none;
 }
-#Search_Button{
-  background: rgba(254, 158, 44, 0.85);
+.search button { 
+  background: rgb(254, 158, 44);
   border-radius: 10px;
   width: 64px;
   height: 64px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin-bottom: 0;
   border-style: none;
 }
 
@@ -61,7 +82,6 @@ header{
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
-
 }
 
 .User_Button i{
@@ -78,11 +98,11 @@ header{
   color: #000;
 }
 
-/* .Inert_Buttons ul{
+.Inert_Buttons ul{
   display: flex;
   list-style: none;
   justify-content: center;
-} */
+}
 
 #gt{
   width: 165px;
@@ -336,7 +356,9 @@ height: 25px;
 
 .sliders{
   width: 100%;
-  max-width: 1920px;
+  max-width: 1864px;
+  margin-left: 20px;
+  margin-right: 39px;
   margin: auto;
   height: 600px;
   overflow: hidden;
@@ -406,15 +428,16 @@ height: 25px;
 
 /* inicio panel de categorias principal */
 
-.decoracion-1{
+.decoracion-1, .decoracion-2{
   width: 100%;
   height: 80px;
-  max-width: 1871px;
+  max-width: 1844px;
   background: #DFE238;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   margin-top: 44px;
-  margin-left: 19px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .decoracion-1 h2{
@@ -423,11 +446,13 @@ height: 25px;
 }
 
 .S-Categorias{
+  display: grid;
   width: 100%;
   height: 278px;
-  max-width: 1871px;
+  max-width: 1844px;
   margin-top: 50px;
-  margin-left: 19px;
+  margin-left: 20px;
+  margin-right: 15px;
   background: #F3F3F3;
   box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.25), inset 4px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -436,6 +461,8 @@ height: 25px;
 .S-Categorias ul{
   list-style: none;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .Guitarras, .Bajos, .Teclados, .Baterias{
@@ -443,6 +470,27 @@ height: 25px;
   height: 177px;
   background: #fff;
   border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.Guitarras  p{
+  padding: 10px;
+  text-align: center;
+}
+
+.Bajos  p{
+  padding: 10px;
+  text-align: center;
+} 
+.Teclados p{ 
+  padding: 10px;
+  text-align: center;
+}
+
+.Baterias p{
+  padding: 10px;
+  text-align: center;
 }
 
 .Guitarras img{
@@ -463,20 +511,51 @@ height: 25px;
 
 .Baterias img{
   width: 201px;
-  height: 132px;
+  height: 162px;
   object-fit: scale-down;
+}
+
+.Boton-Categoria{
+  width: 194px;
+  height: 68px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  align-self: center;
+  margin: 40px;
+}
+
+.Boton-Categoria a{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#circle{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 80px;
 }
 
 /* slider de recomendados */
 
+.decoracion-2 h2{
+  padding-top: 20px;
+  text-align: center;
+}
+
 .slider-1-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1844px;
   height: 266px;
   background: #F3F3F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 44px;
-
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -485,14 +564,14 @@ height: 25px;
   display: flex;
   margin-top: 28px;
   margin-bottom: 28px;
-  margin-left: 36px;
+  margin-left: 30px;
 }
 
 .slide-1{
-  width: 302px;
+  width: 292px;
   height: 148px;
   margin-left: 30px;
-  margin-right: 16px;
+  margin-right: 12px;
   border-radius: 10px;
   background-color: #ccc;
 }
@@ -590,10 +669,25 @@ height: 25px;
 }
 
 
-.decoracion-2{
 
-}
 /* slider de marcas */
+
+.decoracion-3{
+  width: 100%;
+  max-width: 875px;
+  height: 80px;
+  background: #DFE238;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-top: 44px;
+  margin-left: 19px;
+}
+
+.decoracion-3 h2{
+  padding-top: 20px;
+  text-align: center;
+}
+
 
 .slider-container {
   width: 100%;
@@ -605,6 +699,7 @@ height: 25px;
   overflow: hidden;
   position: relative;
   top: 0;
+  margin-top: 20px;
   margin-left: 11px;
 }
 
@@ -663,14 +758,45 @@ height: 25px;
   right: 20px;
 }
 
+#boton-marcas{
+  width: 220px;
+  height: 49px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 350px;
+}
 
 
-
-
+#boton-marcas a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  
+}
 
 
 
 /* seccion blog */
+
+.decoracion-4{
+  width: 100%;
+  max-width: 380px;
+  height: 80px;
+  background: #DFE238;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-top: 44px;
+  margin-left: 19px;
+}
+
+.decoracion-4 h2{
+  padding-top: 20px;
+  text-align: center;
+}
 
 .blog{ 
   width: 380px;
@@ -678,6 +804,7 @@ height: 25px;
   background: url(../resourses/img/foto-blog-web.jpg);
   border-radius: 44px;
   background-size: cover; 
+  margin-top: 20px;
 }
 
 
@@ -700,19 +827,35 @@ height: 25px;
 
 /* footer menu */
 
+footer{
+  height: 111px;
+  background: #FFFBFB;
+  border-top: 1px solid #000000;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: 40px;
+}
+
 
 .footer-contain {
   column-count: 4; 
   column-gap: 10px; 
+  background: #FFFBFB;
 }
 
 .footer-titulo {
   break-inside: avoid-column; 
+  background: #FFFBFB;
+}
+
+.footer-titulo a{
+  color: #000;
+  text-decoration: none;
 }
 
 .footer-titulo ul {
   display: none;
   list-style: none;
+  background: #FFFBFB;
 }
 
 .footer-titulo.mostrar ul {
@@ -725,9 +868,20 @@ height: 25px;
 
 }
 
+#mas-informacion{
+  width: 200px;
+  height: 39px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
 
 
 #final{
+  background: #FFFBFB;
   margin-top: 15px;
   text-align: center;
 }

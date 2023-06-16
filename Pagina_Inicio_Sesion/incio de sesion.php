@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-es">
   <head>
@@ -16,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800&family=Open+Sans:wght@300;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script
       src="https://kit.fontawesome.com/6adb63d45f.js"
       crossorigin="anonymous"
@@ -39,7 +45,7 @@
     <!--Inicio Cuerpo de Página-->
 
     <button>
-      <a href="../Pagina_Inicio_Sesion/registro.html">Crea una cuenta</a>
+      <a href="../Pagina_Inicio_Sesion/registro.php">Crea una cuenta</a>
     </button>
 
     <!--Fin Cuerpo de Página-->
@@ -98,3 +104,5 @@
     <!--Fin de Pie de Página-->
   </body>
 </html>
+
+

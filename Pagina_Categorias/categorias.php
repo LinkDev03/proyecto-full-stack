@@ -1,3 +1,9 @@
+<?php
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-es">
   <head>
@@ -25,7 +31,7 @@
   <body>
     <!--Inicio Cabecera de Página-->
     <header>
-      <a href="../index.html"><div class="logo"></div></a> 
+      <a href="../index.php"><div class="logo"></div></a> 
       </div>
       <input
         id="Search"
@@ -37,7 +43,7 @@
         <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
       </button>
       <button class="User_Button">
-        <a href="../Pagina_Inicio_Sesion/incio de sesion.html">Acceder o Registrarse</a>
+        <a href="../Pagina_Inicio_Sesion/incio de sesion.php">Acceder o Registrarse</a>
         <i class="fa-regular fa-circle-user fa-2xl"></i>
       </button>
       <nav role="navigation">
@@ -49,8 +55,8 @@
           <span></span>
 
           <ul id="menu">
-            <a href="../index.html"><li>Inicio</li></a>
-            <a href="../Pagina_Categorias/categorias.html"><li>Categorías</li></a>
+            <a href="../index.php"><li>Inicio</li></a>
+            <a href="../Pagina_Categorias/categorias.php"><li>Categorías</li></a>
             <a href="#"><li>Guitarras</li></a>
             <a href="#"><li>Bajos</li></a>
             <a href="#"><li>Teclados y Sintetizadores</li></a>
@@ -59,6 +65,7 @@
             <a href="#"><li>Accesorios</li></a>
             <a href="#"><li>Software y Plug-ins</li></a>
             <a href="#"><li>Sonido e iluminación</li></a>
+            <a href="pagina_3/pagina_3.html" target="_blank"><li>visita nuestro blog</li></a>
           </ul>
         </div>
       </nav>
@@ -88,173 +95,158 @@
     </div>
 
     <section class="guitar">
-      <div>
-        <div id="img-container-gr"><img src="../resourses/img/Guitarras.png" alt="Guitar" name="Guitar" /></div>
-        </div>
-      <ul>
-        <li><a href="#">Guitarras Eléctricas</a></li>
-        <li><a href="#">Guitarras Acústicas</a></li>
-        <li><a href="#">Amplificadores de Guitarra</a></li>
-        <li><a href="#">Pedales para Guitarra</a></li>
-        <li><a href="#">Guitarras para Zurdos</a></li>
-        <li><a href="#">Accesorios para Guitarra</a></li>
-        <li><a href="#">Sistema Inalambrico para Guitarra</a></li>
-        <li><a href="#">Paquetes de Guitarras</a></li>
-        <li><a href="#">Cuerdas para Guitarra</a></li>
-        <li><a href="#">Guitarras para Viaje</a></li>
-        <li><a href="#">Libros sobre Guitarra</a></li>
-        <li><a href="#">Pastillas para Guitarra</a></li>
-      </ul>
+        <div id="img-container-gr">
+          <img src="../resourses/img/Guitarras.png" alt="Guitar" name="Guitar" /></div>
+        <ul class="contenedor-lista">
+          <li class="elemento-1"><a href="#">Guitarras Eléctricas</a></li>
+          <li class="elemento-1"><a href="#">Guitarras Acústicas</a></li>
+          <li class="elemento-1"><a href="#">Amplificadores de Guitarra</a></li>
+          <li class="elemento-1"><a href="#">Pedales para Guitarra</a></li>
+          <li class="elemento-1"><a href="#">Guitarras para Zurdos</a></li>
+          <li class="elemento-1"><a href="#">Accesorios para Guitarra</a></li>
+          <li class="elemento-1"><a href="#">Sistema Inalambrico para Guitarra</a></li>
+          <li class="elemento-1"><a href="#">Paquetes de Guitarras</a></li>
+          <li class="elemento-1"><a href="#">Cuerdas para Guitarra</a></li>
+          <li class="elemento-1"><a href="#">Guitarras para Viaje</a></li>
+          <li class="elemento-1"><a href="#">Libros sobre Guitarra</a></li>
+          <li class="elemento-1"><a href="#">Pastillas para Guitarra</a></li>
+        </ul>
     </section>
 
     <section class="bass">
-      <div>
         <div id="img-container-ba"><img src="../resourses/img/Bajos.png" alt="bass" name="bass" /></div>
-      </div>
-      <ul>
-        <li><a href="#">Bajos Eléctricos</a></li>
-        <li><a href="#">Bajos Acústicos</a></li>
-        <li><a href="#">Amplificadores para Bajo</a></li>
-        <li><a href="#">Pedales para Bajo</a></li>
-        <li><a href="#">Bajos para Zurdos</a></li>
-        <li><a href="#">Accesorios para Bajo</a></li>
-        <li><a href="#">Sistema Inalambrico para Bajo</a></li>
-        <li><a href="#">Paquetes de Bajos</a></li>
-        <li><a href="#">Cuerdas para bajo</a></li>
-        <li><a href="#">Bajos sin cabezal</a></li>
-        <li><a href="#">Libros sobre Bajo</a></li>
-        <li><a href="#">Pastillas para Bajo</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Bajos Eléctricos</a></li>
+        <li class="elemento-1"><a href="#">Bajos Acústicos</a></li>
+        <li class="elemento-1"><a href="#">Amplificadores para Bajo</a></li>
+        <li class="elemento-1"><a href="#">Pedales para Bajo</a></li>
+        <li class="elemento-1"><a href="#">Bajos para Zurdos</a></li>
+        <li class="elemento-1"><a href="#">Accesorios para Bajo</a></li>
+        <li class="elemento-1"><a href="#">Sistema Inalambrico para Bajo</a></li>
+        <li class="elemento-1"><a href="#">Paquetes de Bajos</a></li>
+        <li class="elemento-1"><a href="#">Cuerdas para bajo</a></li>
+        <li class="elemento-1"><a href="#">Bajos sin cabezal</a></li>
+        <li class="elemento-1"><a href="#">Libros sobre Bajo</a></li>
+        <li class="elemento-1"><a href="#">Pastillas para Bajo</a></li>
       </ul>
     </section>
 
     <section class="keys">
-      <div>
         <div id="img-container-ky"><img src="../resourses/img/teclados.png" alt="keys" name="keys" /></div>
-      </div>
-      <ul>
-        <li><a href="#">Pianos</a></li>
-        <li><a href="#">Sintetizadores</a></li>
-        <li><a href="#">Sintetizadores Modulares</a></li>
-        <li><a href="#">Organos Electricos</a></li>
-        <li><a href="#">Teclados Portatiles</a></li>
-        <li><a href="#">Estaciones de Trabajo</a></li>
-        <li><a href="#">Controladores MIDI</a></li>
-        <li><a href="#">Amplificadores de Teclado</a></li>
-        <li><a href="#">Accesorios para Teclado</a></li>
-        <li><a href="#">Libros para Piano y Teclado</a></li>
-        <li><a href="#">Paquetes de Teclado y Sintetizador</a></li>
-        <li><a href="#">Acordiones</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Pianos</a></li>
+        <li class="elemento-1"><a href="#">Sintetizadores</a></li>
+        <li class="elemento-1"><a href="#">Sintetizadores Modulares</a></li>
+        <li class="elemento-1"><a href="#">Organos Electricos</a></li>
+        <li class="elemento-1"><a href="#">Teclados Portatiles</a></li>
+        <li class="elemento-1"><a href="#">Estaciones de Trabajo</a></li>
+        <li class="elemento-1"><a href="#">Controladores MIDI</a></li>
+        <li class="elemento-1"><a href="#">Amplificadores de Teclado</a></li>
+        <li class="elemento-1"><a href="#">Accesorios para Teclado</a></li>
+        <li class="elemento-1"><a href="#">Libros para Piano y Teclado</a></li>
+        <li class="elemento-1"><a href="#">Paquetes de Teclado y Sintetizador</a></li>
+        <li class="elemento-1"><a href="#">Acordiones</a></li>
       </ul>
     </section>
 
     <section class="drums">
-      <div>
         <div id="img-container-dr"><img src="../resourses/img/Baterías.png" alt="drums" name="drums" /></div>
-      </div>
-      <ul>
-        <li><a href="#">Baterías Acústicas</a></li>
-        <li><a href="#">Baterías Electricas</a></li>
-        <li><a href="#">Hardware de Batería</a></li>
-        <li><a href="#">Micrófonos para Batería</a></li>
-        <li><a href="#">Platillos</a></li>
-        <li><a href="#">Baquetas y Escobillas</a></li>
-        <li><a href="#">Parches para Batería</a></li>
-        <li><a href="#">Percusión</a></li>
-        <li><a href="#">Percusión para Orquesta</a></li>
-        <li><a href="#">Estuches para Batería</a></li>
-        <li><a href="#">Libros para Batería y Percusión</a></li>
-        <li><a href="#">Paquetes de Batería y percusión</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Baterías Acústicas</a></li>
+        <li class="elemento-1"><a href="#">Baterías Electricas</a></li>
+        <li class="elemento-1"><a href="#">Hardware de Batería</a></li>
+        <li class="elemento-1"><a href="#">Micrófonos para Batería</a></li>
+        <li class="elemento-1"><a href="#">Platillos</a></li>
+        <li class="elemento-1"><a href="#">Baquetas y Escobillas</a></li>
+        <li class="elemento-1"><a href="#">Parches para Batería</a></li>
+        <li class="elemento-1"><a href="#">Percusión</a></li>
+        <li class="elemento-1"><a href="#">Percusión para Orquesta</a></li>
+        <li class="elemento-1"><a href="#">Estuches para Batería</a></li>
+        <li class="elemento-1"><a href="#">Libros para Batería y Percusión</a></li>
+        <li class="elemento-1"><a href="#">Paquetes de Batería y percusión</a></li>
       </ul>
     </section>
 
     <section class="recording">
-      <div>
         <div id="img-container-rg"><img
           src="../resourses/img/grabacion.png"
           alt="recording"
           name="recording"
         /></div>
-      </div>
-      <ul>
-        <li><a href="#">Interfaces de Audio</a></li>
-        <li><a href="#">Monitores de Estudio</a></li>
-        <li><a href="#">Micrófonos</a></li>
-        <li><a href="#">Preamplificadores de Estudio</a></li>
-        <li><a href="#">Grabadoras Digitales</a></li>
-        <li><a href="#">Auriculares y Amplificadores</a></li>
-        <li><a href="#">Mixers Digitales</a></li>
-        <li><a href="#">Mixers Analógicos</a></li>
-        <li><a href="#">Equipo MIDI</a></li>
-        <li><a href="#">Controladores</a></li>
-        <li><a href="#">Convertidores Digitales</a></li>
-        <li><a href="#">Efectos y Procesadores</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Interfaces de Audio</a></li>
+        <li class="elemento-1"><a href="#">Monitores de Estudio</a></li>
+        <li class="elemento-1"><a href="#">Micrófonos</a></li>
+        <li class="elemento-1"><a href="#">Preamplificadores de Estudio</a></li>
+        <li class="elemento-1"><a href="#">Grabadoras Digitales</a></li>
+        <li class="elemento-1"><a href="#">Auriculares y Amplificadores</a></li>
+        <li class="elemento-1"><a href="#">Mixers Digitales</a></li>
+        <li class="elemento-1"><a href="#">Mixers Analógicos</a></li>
+        <li class="elemento-1"><a href="#">Equipo MIDI</a></li>
+        <li class="elemento-1"><a href="#">Controladores</a></li>
+        <li class="elemento-1"><a href="#">Convertidores Digitales</a></li>
+        <li class="elemento-1"><a href="#">Efectos y Procesadores</a></li>
       </ul>
     </section>
 
     <section class="accsesories">
-      <div>
         <div id="img-container-accs"><img
           src="../resourses/img/Accesorios.png"
           alt="accsesories"
           name="accsesories"
         /></div>
-      </div>
-      <ul>
-        <li><a href="#">Soportes</a></li>
-        <li><a href="#">Sillas, Bancos y Taburetes</a></li>
-        <li><a href="#">Auriculares</a></li>
-        <li><a href="#">Protección del Oído</a></li>
-        <li><a href="#">Enchufes Múltiples</a></li>
-        <li><a href="#">Metronomos y afinadores</a></li>
-        <li><a href="#">Batutas y Accesorios</a></li>
-        <li><a href="#">Accesorios para Ordenador</a></li>
-        <li><a href="#">Herramientas Multifunción</a></li>
-        <li><a href="#">Linternas de Bolsillo LED</a></li>
-        <li><a href="#">Cintas Adhesivas</a></li>
-        <li><a href="#">Articulos de Regalo</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Soportes</a></li>
+        <li class="elemento-1"><a href="#">Sillas, Bancos y Taburetes</a></li>
+        <li class="elemento-1"><a href="#">Auriculares</a></li>
+        <li class="elemento-1"><a href="#">Protección del Oído</a></li>
+        <li class="elemento-1"><a href="#">Enchufes Múltiples</a></li>
+        <li class="elemento-1"><a href="#">Metronomos y afinadores</a></li>
+        <li class="elemento-1"><a href="#">Batutas y Accesorios</a></li>
+        <li class="elemento-1"><a href="#">Accesorios para Ordenador</a></li>
+        <li class="elemento-1"><a href="#">Herramientas Multifunción</a></li>
+        <li class="elemento-1"><a href="#">Linternas de Bolsillo LED</a></li>
+        <li class="elemento-1"><a href="#">Cintas Adhesivas</a></li>
+        <li class="elemento-1"><a href="#">Articulos de Regalo</a></li>
       </ul>
     </section>
 
     <section class="software">
-      <div>
         <div id="img-container-sw"><img
           src="../resourses/img/software.png"
           alt="Software"
           name="Software"
         /></div>
-      </div>
-      <ul>
-        <li><a href="#">Secuenciadores Software</a></li>
-        <li><a href="#">Mastering y Otros Editores</a></li>
-        <li><a href="#">Plug-ins de Audio y Efectos</a></li>
-        <li><a href="#">Librerías de Sonidos</a></li>
-        <li><a href="#">Sofware de Notación</a></li>
-        <li><a href="#">Software de Vídeo</a></li>
-        <li><a href="#">Procesadores Virtuales </a></li>
-        <li><a href="#">Software Educacional</a></li>
-        <li><a href="#">Software DAW</a></li>
-        <li><a href="#">Ordenadores</a></li>
-        <li><a href="#">Otros Software Musicales</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Secuenciadores Software</a></li>
+        <li class="elemento-1"><a href="#">Mastering y Otros Editores</a></li>
+        <li class="elemento-1"><a href="#">Plug-ins de Audio y Efectos</a></li>
+        <li class="elemento-1"><a href="#">Librerías de Sonidos</a></li>
+        <li class="elemento-1"><a href="#">Sofware de Notación</a></li>
+        <li class="elemento-1"><a href="#">Software de Vídeo</a></li>
+        <li class="elemento-1"><a href="#">Procesadores Virtuales </a></li>
+        <li class="elemento-1"><a href="#">Software Educacional</a></li>
+        <li class="elemento-1"><a href="#">Software DAW</a></li>
+        <li class="elemento-1"><a href="#">Ordenadores</a></li>
+        <li class="elemento-1"><a href="#">Otros Software Musicales</a></li>
       </ul>
     </section>
 
     <section class="sound">
-      <div>
         <div id="img-container-sd"><img src="../resourses/img/luces.png" alt="sound" name="sound" /></div>
-      </div>
-      <ul>
-        <li><a href="#">Sistemas completos de PA</a></li>
-        <li><a href="#">Sistemas inalámbricos</a></li>
-        <li><a href="#">Monitorización In Ear</a></li>
-        <li><a href="#">Herramientas de audio</a></li>
-        <li><a href="#">Etapas de potencia</a></li>
-        <li><a href="#">Control de altavoces / Crossovers</a></li>
-        <li><a href="#">Iluminación de decoración</a></li>
-        <li><a href="#">Cabezas móviles</a></li>
-        <li><a href="#">Hardware</a></li>
-        <li><a href="#">Proyectores</a></li>
-        <li><a href="#">Sets de proyectores</a></li>
-        <li><a href="#">Pirotecnia</a></li>
+      <ul class="contenedor-lista">
+        <li class="elemento-1"><a href="#">Sistemas completos de PA</a></li>
+        <li class="elemento-1"><a href="#">Sistemas inalámbricos</a></li>
+        <li class="elemento-1"><a href="#">Monitorización In Ear</a></li>
+        <li class="elemento-1"><a href="#">Herramientas de audio</a></li>
+        <li class="elemento-1"><a href="#">Etapas de potencia</a></li>
+        <li class="elemento-1"><a href="#">Control de altavoces / Crossovers</a></li>
+        <li class="elemento-1"><a href="#">Iluminación de decoración</a></li>
+        <li class="elemento-1"><a href="#">Cabezas móviles</a></li>
+        <li class="elemento-1"><a href="#">Hardware</a></li>
+        <li class="elemento-1"><a href="#">Proyectores</a></li>
+        <li class="elemento-1"><a href="#">Sets de proyectores</a></li>
+        <li class="elemento-1"><a href="#">Pirotecnia</a></li>
       </ul>
     </section>
 
