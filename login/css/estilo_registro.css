@@ -1,32 +1,27 @@
 *{
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0; 
 }
-
-body{
-    background-image: url(../img/registro_1.jpg);   
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-}
-
 
 header{
     background: #DFE238;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
+    justify-content: center;
+    height: 200px;
 }
 
-header img{
+.logo{
+    display: flex;
     width: 361px;
     height: 108px;
+    margin-top: 15px;
+}
+
+.logo img{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    object-fit: scale-down;
-    align-items: center;
+    object-fit: cover;
+    width: 361px;
+    height: 170px;
 }
 
 footer{
@@ -36,8 +31,7 @@ footer{
     border-radius: 30px 30px 0px 0px;
     margin-top: 40px;
   }
-  
-  
+
   .footer-contain {
     column-count: 4; 
     column-gap: 10px; 
@@ -49,18 +43,29 @@ footer{
     background: #FFFBFB;
   }
   
+  .footer-titulo a{
+    color: #000;
+    text-decoration: none;
+  }
+
+.footer-titulo{
+    margin-left: 10px;
+}
+
   .footer-titulo ul {
     display: none;
     list-style: none;
     background: #FFFBFB;
   }
   
-  .footer-titulo a{
-    color: #000;
-    text-decoration: none;
-  }
   .footer-titulo.mostrar ul {
     display: block;
+  }
+  
+  #mas-informacion{
+  
+    margin-top: 20px;
+  
   }
   
   #mas-informacion{
@@ -70,14 +75,14 @@ footer{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 24px;
     border: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
   
   
-  
   #final{
-    background: #FFFBFB;
+    color: #000;
     margin-top: 15px;
     text-align: center;
   }
+  
