@@ -26,30 +26,52 @@ header{
   background-position: center;
   width: 185px;
   height: 90px;
-  margin-left: 28px;
-  margin-top: 8px; 
+  margin-left: 38px;
+  margin-top: 12px; 
   box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-#Search{
-  display: flex;
+.search{
+  width: 760px;
+  height: 64px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.search form{
+  width: 760px;
+  height: 64px;
+  
+}
+
+#Search-bar{
   width: 100%;
   height: 100%;
+  display: inline-flex;
+  position: relative;
+  top: -15px;
+  left: 90px;
   max-width: 751px;
-  max-height: 63px;
-  padding-inline-start: 30px;
+  max-height: 64px;
+  padding-inline-start: 10px;
+  padding-right: 64px;
   outline: none;
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border-style: none;
 }
-
-#Search_Button{
-  background: rgba(254, 158, 44, 0.85);
+.search button { 
+  background: rgb(254, 158, 44);
   border-radius: 10px;
   width: 64px;
   height: 64px;
+  position: absolute;
+  right: -85px;
+  top: -15px;
+  padding: 0;
+  margin-bottom: 0;
   border-style: none;
 }
 
@@ -60,7 +82,9 @@ header{
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
-
+  position: relative;
+  top: -15px;
+  left: 150px;
 }
 
 .User_Button i{
@@ -72,61 +96,35 @@ header{
 
 .User_Button a{
   font-size: 20px;
-  font-weight: 400;
   text-decoration: none;
+  font-weight: 500;
   color: #000;
 }
 
 .Inert_Buttons{
-  display: flex;
+  display: inline-flex;
+  padding-left: 320px;
   align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: baseline;
+  justify-items: stretch;
+  padding-right: 30px;
 }
 
-#gt{
+.Inert_Buttons ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+#gt, #bp, #ts, #bj, #ge{
   width: 165px;
   height: 68px;
   background: #DFE238;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
-}
-
-#bp{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-
-#ts{
-  width: 100%;
-  width: 100%;
-  max-width: 165px;
-  max-height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-
-#bj{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-
-#ge{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
+  margin-right: 40px;
 }
 
 #gt a{
@@ -167,16 +165,25 @@ header{
 }
 
 #shop-cart{
+  position: absolute;
+  top: 40px;
+  right: 150px;
   font-size: 50px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   stroke: #000;
+
 }
 
 .Social_Media{
 width: 111px;
 height: 25px;
+display: inline-block;
+} 
 
+.Social_Media ul{
+  list-style: none;
+  display: flex;
 }
 
 .Social_Media i{
@@ -189,7 +196,6 @@ height: 25px;
   font-size: 40px;
   font-weight: 100;
 }
-
 
 #menuToggle {
   display: block;
@@ -415,20 +421,6 @@ height: 25px;
   height: 250px;
   object-fit: scale-down;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .decoracion-pr{

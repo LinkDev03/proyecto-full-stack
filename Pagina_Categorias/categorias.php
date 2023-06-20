@@ -26,24 +26,23 @@
       src="https://kit.fontawesome.com/6adb63d45f.js"
       crossorigin="anonymous"
     ></script>
-    <title>Proyecto Full Stack</title>
+    <title>Categorias</title>
   </head>
   <body>
     <!--Inicio Cabecera de Página-->
     <header>
       <a href="../index.php"><div class="logo"></div></a> 
       </div>
-      <input
-        id="Search"
-        type="text"
-        name="Barra de busqueda"
-        placeholder="       Buscar en la tienda..."
-      />
-      <button id="Search_Button">
-        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-      </button>
+      <div class="search">
+        <form  action=" " metod= "get">
+        <input id="Search-bar" type="text" name="Barra de busqueda"  placeholder=" Buscar en la tienda...">
+        <button id="btn" type="submit"> 
+          <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        </button>
+        </form> 
+        </div>
       <button class="User_Button">
-        <a href="../Pagina_Inicio_Sesion/incio de sesion.php">Acceder o Registrarse</a>
+        <a href="../login/InicioSesion.php">Acceder o Registrarse</a>
         <i class="fa-regular fa-circle-user fa-2xl"></i>
       </button>
       <nav role="navigation">
@@ -70,19 +69,22 @@
         </div>
       </nav>
       <nav class="Inert_Buttons">
-        <button id="gt"><a href="#">GUITARRAS</a></button>
-        <button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button>
-        <button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button>
-        <button id="bj"><a href="#">BAJOS</a></button>
-        <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button>
-    </nav>
-    <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
-    <div class="Social_Media">
-    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
-    </div>
+          <ul>
+            <li><button id="gt"><a href="#">GUITARRAS</a></button></li>
+            <li><button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button></li>
+            <li><button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button></li>
+            <li><button id="bj"><a href="#">BAJOS</a></button></li>
+            <li> <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button></li>
+          </ul>
+          <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+          <div class="Social_Media">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+        </div>
     </header>
 
     <!--Fin Cabecera de Página-->

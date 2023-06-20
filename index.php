@@ -1,11 +1,3 @@
-<?php
-
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en-es">
 <head>
@@ -18,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6adb63d45f.js" crossorigin="anonymous"></script>
-    <title>Proyecto Full Stack</title>
+    <title>Infinix Music Store</title>
 </head>
 <body>
 
@@ -35,9 +27,10 @@
         </form> 
         </div>
         
-        <button class="User_Button"><a href="Pagina_Inicio_Sesion/incio de sesion.php">Acceder o Registrarse</a>
-            <i class="fa-solid fa-circle-user"></i>
-        </button>
+
+    <button type="button" class="User_Button"><a href="login/InicioSesion.php">Acceder o Registrarse</a>  
+    <i class="fa-solid fa-circle-user"></i>
+    </button>';
         <nav role="navigation"> 
             <div id="menuToggle">
             
@@ -64,13 +57,13 @@
             </div>
         </nav>
         <nav class="Inert_Buttons">
-           <ul>
+          <ul>
             <li><button id="gt"><a href="#">GUITARRAS</a></button></li>
             <li><button id="bp"><a href="#">BATERÍAS Y PERCUSION</a></button></li>
             <li><button id="ts"><a href="#">TECLADOS Y SINTETIZADORES</a></button></li>
             <li><button id="bj"><a href="#">BAJOS</a></button></li>
-            <li> <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button></li>
-           </ul>
+            <li><button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button></li>
+          </ul>
         </nav>
         <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
         <div class="Social_Media">
@@ -94,16 +87,16 @@
             <ul>
                 <li id="slider-1">
                     <h2>RUGE CON LA </br> NUEVA SERIE DE </br> AMPLIFICADORES ORANGE </h2>
-                    <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn-sld"><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
                     
                 </li>
                 <li id="slider-2">
                     <h2>CONOCE LA</br> NUEVA LINEA DE </br> GUITARRAS ESP </h2>
-                    <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn-sld"><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
                 </li>
                 <li id="slider-3">
                     <h2>PRACTICA SIN HACER </br> MUCHO RUIDO CON LA NUEVA LINEA DE </br> PLATILLOS MEINL HCS PRACTICE</h2>
-                    <button><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn-sld"><a href="">Saber Más <i class="fa-solid fa-arrow-right"></i></a></button>
                 </li>
             </ul>
         </section>
@@ -116,22 +109,22 @@
     <section class="S-Categorias">
       <ul>
         <li><div class="Guitarras">
-            <a href=""><img src="resourses/img/Guitarras.png" alt="Guitarras" name="Guitarras"></a>
+            <div class="img-cont"><a href=""><img src="resourses/img/Guitarras.png" alt="Guitarras" name="Guitarras"></a></div>
             <p><a href=" ">Guitarras</a></p>
         </div>
        </li>
         <li><div class="Bajos">
-            <a href=""><img src="resourses/img/Bajos.png" alt="Bajos" name="Bajos"></a>
+            <div class="img-cont"><a href=""><img src="resourses/img/Bajos.png" alt="Bajos" name="Bajos"></a></div>
             <p><a href="">Bajos</a></p>
         </div>
         </li>
         <li><div class="Teclados">
-            <a href=""><img src="resourses/img/teclados.png" alt="Teclados" name="Teclados"></a>
+            <div class="img-cont"><a href=""><img src="resourses/img/teclados.png" alt="Teclados" name="Teclados"></a></div>
             <p><a href=" ">Teclados y Sintetizadores</a></p>
         </div>
         </li>
         <li><div class="Baterias">
-            <a href=""><img src="resourses/img/Baterías.png" alt="Baterías" name="Baterías"></a>
+            <div class="img-cont"><a href=""><img src="resourses/img/Baterías.png" alt="Baterías" name="Baterías"></a></div>
             <p><a href=" ">Baterías y  percusión</a></p>
         </div>
         </li> 
@@ -192,11 +185,13 @@
       
 
     <!-- sección de Marcas -->
-
-    <div class="decoracion-3"><h2>Marcas Populares</h2></div>
-
+    <div class="container">
+  <div class="content">
+    <div class="decoracion-3">
+      <h2>Marcas Populares</h2>
+    </div>
     <div class="slider-container">
-        <div class="slider">
+      <div class="slider">
               <div class="slide">
                 <button>
                <a href="https://www.dwdrums.com/" target="_blank"><img src="resourses/img/logos/Drum_worksh_logo.png" alt="DW"/></a> 
@@ -287,23 +282,24 @@
                     <a href="https://pearldrum.com/global/" target="_blank"><img src="resourses/img/logos/Pearl_drum_logo.png" alt="Pearl-Drums"></a>
                 </button>
               </div>
-             
         </div>
         <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button> 
         <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
+            <div class="btn-container">
+            <button id="boton-marcas"><a href="">Ver Todas</a></button>
           </div>
-
-    <button id="boton-marcas" type="submit"><a href="">Ver Todas</a></button>
-
-    <!-- sección de blog -->
-
-    <aside class="decoracion-4"><h2>Visita Nuestro Blog</h2></aside>
-
-    <aside class="blog">
-        <button><a href="pagina_3/pagina_3.html" target="_blank">Entra Aquí</a></button>
-    </aside>
-
+      </div>
+<!-- sección de blog -->
+<div class="side-container">
+      <aside class="decoracion-4">
+        <h2>Visita Nuestro Blog</h2>
+      </aside>
+      <aside class="side">
+      <button><a href="pagina_3/pagina_3.html" target="_blank">Entra Aquí</a></button>
+      </aside>
+    </div>
+  </div>
     <!--Fin Cuerpo de Página-->
 
     <!--Inicio de Pie de Página-->
@@ -315,7 +311,7 @@
           <ul>
             <li>Dirección: 123 Calle Principal</li>
             <li>Teléfono: 555-123456</li>
-            <li><a href="">Email:info@example.com</a></li>
+            <li>Email:<a href="">info@example.com</a></li>
             <li>Horario: Lunes a Viernes, 9am-5pm</li>
           </ul>
         </div>

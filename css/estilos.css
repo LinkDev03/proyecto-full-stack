@@ -29,8 +29,8 @@ header{
   background-position: center;
   width: 185px;
   height: 90px;
-  margin-left: 28px;
-  margin-top: 8px; 
+  margin-left: 38px;
+  margin-top: 12px; 
   box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
@@ -52,7 +52,10 @@ header{
 #Search-bar{
   width: 100%;
   height: 100%;
-  display: inline-block;
+  display: inline-flex;
+  position: relative;
+  top: -15px;
+  left: 90px;
   max-width: 751px;
   max-height: 64px;
   padding-inline-start: 10px;
@@ -68,8 +71,8 @@ header{
   width: 64px;
   height: 64px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -85px;
+  top: -15px;
   padding: 0;
   margin-bottom: 0;
   border-style: none;
@@ -82,6 +85,9 @@ header{
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border-style: none;
+  position: relative;
+  top: -15px;
+  left: 150px;
 }
 
 .User_Button i{
@@ -98,13 +104,23 @@ header{
   color: #000;
 }
 
+.Inert_Buttons{
+  display: inline-grid;
+  padding-left: 320px;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: baseline;
+  justify-items: stretch;
+  padding-right: 30px;
+}
+
 .Inert_Buttons ul{
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
-#gt{
+#gt, #bp, #ts, #bj, #ge{
   width: 165px;
   height: 68px;
   background: #DFE238;
@@ -112,45 +128,6 @@ header{
   border-radius: 20px;
   border-style: none;
   margin-right: 40px;
-}
-
-#bp{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-  margin-right: 40px;
-}
-
-#ts{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-  margin-right: 40px;
-}
-
-#bj{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-  margin-right: 40px;
-}
-
-#ge{
-  width: 165px;
-  height: 68px;
-  background: #DFE238;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
 }
 
 #gt a{
@@ -191,6 +168,9 @@ header{
 }
 
 #shop-cart{
+  position: absolute;
+  top: 40px;
+  right: 150px;
   font-size: 50px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -201,14 +181,12 @@ header{
 .Social_Media{
 width: 111px;
 height: 25px;
+display: inline-block;
 } 
 
 .Social_Media ul{
   list-style: none;
   display: flex;
-}
-.Social_Media li{
-  flex-flow: wrap column;
 }
 
 .Social_Media i{
@@ -390,7 +368,8 @@ height: 25px;
 
 #slider-1 h2{
   color: #fff;
-  
+  margin-top: 60px;
+  margin-left: 40px;
 }
 
 #slider-2{
@@ -400,6 +379,8 @@ height: 25px;
 
 #slider-2 h2{
   color: #fff;
+  margin-top: 60px;
+  margin-left: 40px;
 }
 
 #slider-3{
@@ -409,8 +390,25 @@ height: 25px;
 
 #slider-3 h2{
   color: #fff;
+  margin-top: 60px;
+  margin-left: 40px;
 }
 
+.btn-sld{
+  width: 164px;
+  height: 54px;
+  background: #DFE238;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.btn-sld  a{
+  font-size: 20px;
+  font-weight: 600;
+}
 
 @keyframes slider{
   0%{margin-left: 0;}
@@ -465,7 +463,7 @@ height: 25px;
   justify-content: space-evenly;
 }
 
-.Guitarras, .Bajos, .Teclados, .Baterias{
+.Guitarras, .Bajos, .Teclados, .Baterias, .img-cont{
   width: 230px;
   height: 177px;
   background: #fff;
@@ -496,11 +494,13 @@ height: 25px;
 .Guitarras img{
   width: 134px;
   height: 188px;
+  margin: 1px 35px;
 }
 
 .Bajos img{
   width: 178px;
   height: 178px;
+  margin: 1px 15px;
 }
 
 .Teclados img{
@@ -672,9 +672,22 @@ height: 25px;
 
 /* slider de marcas */
 
+.container {
+  display: flex;
+  
+}
+
+.content{
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.slider-container {
+  margin-bottom: 20px;
+}
+
 .decoracion-3{
-  width: 100%;
-  max-width: 875px;
+  width: 875px;
   height: 80px;
   background: #DFE238;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -690,8 +703,7 @@ height: 25px;
 
 
 .slider-container {
-  width: 100%;
-  max-width: 875px;
+  width: 875px;
   height: 197px;
   background: #F3F3F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -700,6 +712,7 @@ height: 25px;
   position: relative;
   top: 0;
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 11px;
 }
 
@@ -758,6 +771,12 @@ height: 25px;
   right: 20px;
 }
 
+.btn-container {
+  width: 100%;
+  text-align: center; 
+}
+
+
 #boton-marcas{
   width: 220px;
   height: 49px;
@@ -765,8 +784,10 @@ height: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 44px;
   border: none;
-  margin-top: 20px;
-  margin-left: 350px;
+  margin-top: 10px;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block; 
 }
 
 
@@ -780,45 +801,57 @@ height: 25px;
 
 
 
+
 /* seccion blog */
+.side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 .decoracion-4{
-  width: 100%;
-  max-width: 380px;
+  margin-top: 20px;
+  width: 950px;
   height: 80px;
   background: #DFE238;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   margin-top: 44px;
-  margin-left: 19px;
+  margin-right: 19px;
 }
+
 
 .decoracion-4 h2{
   padding-top: 20px;
   text-align: center;
 }
 
-.blog{ 
-  width: 380px;
-  height: 380px;
+.side{ 
+  margin-top: 20px;
+  width: 940px;
+  height: 250px;
   background: url(../resourses/img/foto-blog-web.jpg);
   border-radius: 44px;
   background-size: cover; 
+  background-repeat: no-repeat;
   margin-top: 20px;
 }
 
 
-.blog button{
+.side button{
+  display: block;
+  margin: auto;
+  margin-top: 160px;
   width: 220px;
   height: 49px;
-  background: #F3F3F3;
   mix-blend-mode: multiply;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 44px;
   border: none;
 }
 
-.blog a{
+.side a{
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -863,19 +896,16 @@ footer{
 }
 
 #mas-informacion{
-
-  margin-top: 20px;
-
-}
-
-#mas-informacion{
+  display: block;
+  margin: auto;
   width: 200px;
   height: 39px;
   background: #F3F3F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
   border: none;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 18px;
 }
 
@@ -885,3 +915,406 @@ footer{
   margin-top: 15px;
   text-align: center;
 }
+
+
+@media all and (max-width: 1380px) {
+  #Search-bar{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    position: relative;
+    top: -30px;
+    left: 50px;
+    max-width: 751px;
+    max-height: 64px;
+    padding-inline-start: 10px;
+    padding-right: 64px;
+    outline: none;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-style: none;
+  }
+  .search button { 
+    background: rgb(254, 158, 44);
+    border-radius: 10px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: -45px;
+    top: -30px;
+    padding: 0;
+    margin-bottom: 0;
+    border-style: none;
+  }
+  
+  .User_Button{
+    width: 280px;
+    height: 68px;
+    background: #CFD235;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-style: none;
+    position: relative;
+    top: -30px;
+    left: 60px;
+  }
+
+  .Inert_Buttons{
+    display: inline-grid;
+    padding-left: 160px;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: baseline;
+    justify-items: stretch;
+    padding-right: 4px;
+  }
+
+  #gt, #bp, #ts, #bj, #ge{
+    width: 165px;
+    height: 68px;
+    background: #DFE238;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-style: none;
+    margin-right: 40px;
+  }
+  
+  #shop-cart{
+    position: absolute;
+    top: 105px;
+    right: 145px;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  
+  }
+  
+  .sliders{
+    width: 100%;
+    max-width: 1284px;
+    margin-left: 20px;
+    margin-right: 39px;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .S-Categorias{
+    display: grid;
+    width: 100%;
+    height: 278px;
+    max-width: 1284px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.25), inset 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  }
+
+  .Guitarras, .Bajos, .Teclados, .Baterias, .img-cont{
+    width: 210px;
+    height: 177px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .Guitarras img{
+    margin: 1px 30px;
+  }
+  
+  .Bajos img{
+    margin: 1px 8px;
+  }
+  
+  .Teclados img{
+    width: 210px;
+    margin-right: 15px;
+  }
+  
+  
+  .Baterias img{
+    width: 181px;
+    height: 162px;
+    object-fit: scale-down;
+  }
+
+  .decoracion-1, .decoracion-2{
+    width: 100%;
+    height: 80px;
+    max-width: 1294px;
+    background: #DFE238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top: 44px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .slider-1-container{
+    width: 100%;
+    max-width: 1284px;
+    height: 266px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-1{
+    width: 262px;
+    height: 148px;
+    margin-left: 30px;
+    margin-right: 12px;
+    border-radius: 10px;
+    background-color: #ccc;
+  }
+  
+  .img-1, .img-2, .img-3, .img-4, 
+  .img-5, .img-6, .img-7, .img-8{
+    width: 262px;
+    height: 148px; 
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  .decoracion-4{
+    margin-top: 20px;
+    width: 420px;
+    height: 80px;
+    background: #DFE238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top: 44px;
+    margin-right: 19px;
+  }
+  .side{ 
+    margin-top: 20px;
+    width: 420px;
+    height: 250px;
+    border-radius: 44px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+@media all and (max-width: 1024px) {
+.logo{
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+}
+  #Search-bar{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    position: relative;
+    top: 5px;
+    left: 205px;
+    max-width: 561px;
+    max-height: 64px;
+    padding-inline-start: 10px;
+    padding-right: 64px;
+    outline: none;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-style: none;
+  }
+  .search button { 
+    background: rgb(254, 158, 44);
+    border-radius: 10px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: -16px;
+    top: 10px;
+    padding: 0;
+    margin-bottom: 0;
+    border-style: none;
+  }
+  
+  .User_Button{
+    width: 180px;
+    height: 68px;
+    background: #CFD235;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-style: none;
+    position: relative;
+    top: -90px;
+    left: 60px;
+  }
+
+  .User_Button i{
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 600;
+    text-shadow:  4px 4px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .User_Button a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .Inert_Buttons{
+    display: none;
+  }
+
+  .Social_Media{
+    width: 111px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: -210px;
+    right:-90px;
+    } 
+
+  #shop-cart{
+    position: absolute;
+    top: 125px;
+    right: 145px;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  
+  }
+  
+  .sliders{
+    width: 100%;
+    max-width: 1284px;
+    margin-left: 20px;
+    margin-right: 39px;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .S-Categorias{
+    display: grid;
+    width: 100%;
+    height: 278px;
+    max-width: 1284px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.25), inset 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  }
+
+  .Guitarras, .Bajos, .Teclados, .Baterias, .img-cont{
+    width: 210px;
+    height: 177px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .Guitarras img{
+    margin: 1px 30px;
+  }
+  
+  .Bajos img{
+    margin: 1px 8px;
+  }
+  
+  .Teclados img{
+    width: 210px;
+    margin-right: 15px;
+  }
+  
+  
+  .Baterias img{
+    width: 181px;
+    height: 162px;
+    object-fit: scale-down;
+  }
+
+  .decoracion-1, .decoracion-2{
+    width: 100%;
+    height: 80px;
+    max-width: 1294px;
+    background: #DFE238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top: 44px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .slider-1-container{
+    width: 100%;
+    max-width: 1284px;
+    height: 266px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-1{
+    width: 262px;
+    height: 148px;
+    margin-left: 30px;
+    margin-right: 12px;
+    border-radius: 10px;
+    background-color: #ccc;
+  }
+  
+  .img-1, .img-2, .img-3, .img-4, 
+  .img-5, .img-6, .img-7, .img-8{
+    width: 262px;
+    height: 148px; 
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  .decoracion-4{
+    margin-top: 20px;
+    width: 420px;
+    height: 80px;
+    background: #DFE238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top: 44px;
+    margin-right: 19px;
+  }
+  .side{ 
+    margin-top: 20px;
+    width: 420px;
+    height: 250px;
+    border-radius: 44px;
+    margin-top: 20px;
+  }
+  
+}
+
+
+
+
+
+@media all and (min-width: 768px) {
+  
+}
+

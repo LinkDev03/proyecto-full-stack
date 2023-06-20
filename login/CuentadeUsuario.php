@@ -1,14 +1,14 @@
 <?php
-session_start();
 
-if (!isset($_SESSION['Usuario']) || empty($_SESSION['Usuario'])) {
-    header("Location: InicioSesion.php");
-    exit();
-}
 header("Cache-Control: no-cache, no-store, must-revalidate");
 header("Pragma: no-cache");
 header("Expires: 0");
+session_start();
 
+if (!isset($_SESSION['Usuario']) || empty($_SESSION['Usuario'])) {
+    header("Location: index.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +21,8 @@ header("Expires: 0");
     <title>Mi Cuenta</title>
 </head>
 <body>
+    <a href="../index.php"><img src="../resourses/img/logos/MasterMusicStore.png" alt="logo"></a>
+
     <H1>Bienvenido De Vuelta!</H1>
 
     <a href="CerrarSesion.php">Cerrar Sesion</a>
