@@ -18,20 +18,29 @@ header("Expires: 0");
 </head>
 <body>
     <header>
-        <div class="logo"><a href=""><img src="img/MasterMusicStore.png" alt="logo"></a></div>
+        <div class="logo"><a href="../index.php"><img src="img/MasterMusicStore.png" alt="logo"></a></div>
     </header>
 
   <div class="registro">
+
+  <?php if (isset($_GET['error'])) { ?>
+                <p class="error"> <?php echo $_GET['error']; ?></p>
+            <?php }?>
+            <br>
+            <?php if (isset($_GET['success'])) { ?>
+                <p class="success"> <?php echo $_GET['success']; ?></p>
+            <?php }?>
+            <br>
     <form action="registro.php" method="POST">
       <div class="registrate"><h2>Registrate</h2></div>
       <input type="text" name="nombre" placeholder="Nombre"/>
       <input type="text" name="apellido" placeholder="Apellido"/>
-      <input type="email" name="correo" placeholder="Correo Electronico"/>
-      <input type="password" name="contraseña" placeholder="Introduce una Contraseña"/>
-      <input type="password" name="contraseña" placeholder="Introduce Nuevamente la Contraseña"/>
+      <input type="email" name="usuario"  id="element" placeholder="Correo Electronico"/>
+      <input type="password" name="contraseña" id="element" placeholder="Introduce una Contraseña"/>
+      <input type="password" name="Rcontraseña"  id="element" placeholder="Introduce Nuevamente la Contraseña"/>
       <button type="submit">Crear Cuenta</button>
       <P>ya tienes una cuenta? accede aquí</P>
-    <button id="rr"><a href="InicioSesion.php">Acceder</a></button>
+    <button type="button" id="rr"><a href="InicioSesion.php">Acceder</a></button>
     </form>
   </div>
 

@@ -19,7 +19,7 @@ header("Expires: 0");
 </head>
 <body>
 <header>
-    <div class="logo"><a href=""><img src="img/MasterMusicStore.png" alt="logo"></a></div>
+    <div class="logo"><a href="../index.php"><img src="img/MasterMusicStore.png" alt="logo"></a></div>
 </header>   
 
 <div class="content">
@@ -37,11 +37,11 @@ header("Expires: 0");
   ?>
     <form method="POST" action="iniciarSesion.php" >
     <div class="bienvenido"><h2>Hola de Nuevo!</h2></div>
-    <input type="email" name="Usuario" placeholder="Correo o Usuario"/>
+    <input type="email" name="Usuario" placeholder="Correo Electronico"/>
      <input type="password" name="Contraseña" placeholder="Contraseña"/>
     <button type="submit">Iniciar Sesion</button>
     <P>No tienes una cuenta? crea una aquí</P>
-    <button id="cc"><a href="registrarse.php">Crear Cuenta</a></button>
+    <button type="button" id="cc"><a href="registrarse.php">Crear Cuenta</a></button>
     </form>
 </div>
 

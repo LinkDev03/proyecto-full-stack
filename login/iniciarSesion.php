@@ -31,7 +31,7 @@ if (empty($Usuario)) {
     exit();
 }else {
 
-    // $Contraseña = md5($Contraseña);
+    $Contraseña = md5($Contraseña);
     
     $sql = "SELECT * FROM usuarios WHERE Usuario = ? AND Contraseña = ?";
     $stmt = mysqli_prepare($conexion, $sql);
