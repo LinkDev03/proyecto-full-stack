@@ -30,7 +30,7 @@
 
     <button type="button" class="User_Button"><a href="login/InicioSesion.php">Acceder o Registrarse</a>  
     <i class="fa-solid fa-circle-user"></i>
-    </button>';
+    </button>
         <nav role="navigation"> 
             <div id="menuToggle">
             
