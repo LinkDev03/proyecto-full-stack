@@ -591,3 +591,29 @@ footer{
   margin-top: 15px;
   text-align: center;
 }
+
+
+@media all and (max-width: 1370px){
+  .decoracion-pr{
+    width: 100%;
+    height: 80px;
+    max-width: 1284px;
+    background: #DFE238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    margin: 20px  20px 20px 30px;
+  }
+
+  .slider-container {
+    width: 100%;
+    max-width: 1284px;
+    height: 197px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    margin-left: 28px;
+  }
+}

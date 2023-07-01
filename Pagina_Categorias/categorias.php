@@ -64,7 +64,7 @@
             <a href="#"><li>Accesorios</li></a>
             <a href="#"><li>Software y Plug-ins</li></a>
             <a href="#"><li>Sonido e iluminación</li></a>
-            <a href="pagina_3/pagina_3.html" target="_blank"><li>visita nuestro blog</li></a>
+            <a href="../pagina_3/pagina_3.html" target="_blank"><li>visita nuestro blog</li></a>
           </ul>
         </div>
       </nav>
