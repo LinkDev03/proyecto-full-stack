@@ -26,7 +26,7 @@
       src="https://kit.fontawesome.com/6adb63d45f.js"
       crossorigin="anonymous"
     ></script>
-    <title>Categorias</title>
+    <title>Categorias - Infinix Music Store</title>
   </head>
   <body>
     <!--Inicio Cabecera de Página-->
@@ -237,18 +237,18 @@
     <section class="sound">
         <div id="img-container-sd"><img src="../resourses/img/luces.png" alt="sound" name="sound" /></div>
       <ul class="contenedor-lista">
-        <li class="elemento-1"><a href="#">Sistemas completos de PA</a></li>
-        <li class="elemento-1"><a href="#">Sistemas inalámbricos</a></li>
-        <li class="elemento-1"><a href="#">Monitorización In Ear</a></li>
-        <li class="elemento-1"><a href="#">Herramientas de audio</a></li>
-        <li class="elemento-1"><a href="#">Etapas de potencia</a></li>
-        <li class="elemento-1"><a href="#">Control de altavoces / Crossovers</a></li>
-        <li class="elemento-1"><a href="#">Iluminación de decoración</a></li>
-        <li class="elemento-1"><a href="#">Cabezas móviles</a></li>
-        <li class="elemento-1"><a href="#">Hardware</a></li>
-        <li class="elemento-1"><a href="#">Proyectores</a></li>
-        <li class="elemento-1"><a href="#">Sets de proyectores</a></li>
-        <li class="elemento-1"><a href="#">Pirotecnia</a></li>
+        <li class="elemento-3"><a href="#">Sistemas completos de PA</a></li>
+        <li class="elemento-3"><a href="#">Sistemas inalámbricos</a></li>
+        <li class="elemento-3"><a href="#">Monitorización In Ear</a></li>
+        <li class="elemento-3"><a href="#">Herramientas de audio</a></li>
+        <li class="elemento-3"><a href="#">Etapas de potencia</a></li>
+        <li class="elemento-3"><a href="#">Control de altavoces / Crossovers</a></li>
+        <li class="elemento-3"><a href="#">Iluminación de decoración</a></li>
+        <li class="elemento-3"><a href="#">Cabezas móviles</a></li>
+        <li class="elemento-3"><a href="#">Hardware</a></li>
+        <li class="elemento-3"><a href="#">Proyectores</a></li>
+        <li class="elemento-3"><a href="#">Sets de proyectores</a></li>
+        <li class="elemento-3"><a href="#">Pirotecnia</a></li>
       </ul>
     </section>
 
