@@ -17,7 +17,7 @@
     <!--Inicio Cabecera de Página--> 
     
     <header>
-        <a href="index.php"><div class="logo"><!--<img src="resourses/img/logos/MasterMusicStore.png" alt="logo" name="logo"/>--></div></a> 
+        <a id="href" href="index.php"><div class="logo"><!--<img src="resourses/img/logos/MasterMusicStore.png" alt="logo" name="logo"/>--></div></a> 
         <div class="search">
         <form  action=" " metod= "get">
         <input id="Search-bar" type="text" name="Barra de busqueda"  placeholder=" Buscar en la tienda...">
