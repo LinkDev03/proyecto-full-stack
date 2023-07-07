@@ -31,7 +31,7 @@
   <body>
     <!--Inicio Cabecera de Página-->
     <header>
-      <a href="../index.php"><div class="logo"></div></a> 
+      <a id="href" href="../index.php"><div class="logo"></div></a> 
       </div>
       <div class="search">
         <form  action=" " metod= "get">
@@ -76,7 +76,10 @@
             <li><button id="bj"><a href="#">BAJOS</a></button></li>
             <li> <button id="ge"><a href="#">GRABACIÓN Y ESTUDIO</a></button></li>
           </ul>
+      </nav>
+
           <a href="#"><i id="shop-cart" class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+
           <div class="Social_Media">
             <ul>
                 <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
