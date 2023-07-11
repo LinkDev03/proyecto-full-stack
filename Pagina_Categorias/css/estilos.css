@@ -312,6 +312,8 @@ display: inline-block;
   border-radius: 30px;
   margin-top: 15px;
   width: 100%;
+  max-width: 1864px;
+  margin-left: 20px;
   height: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
@@ -325,6 +327,8 @@ display: inline-block;
 
 .guitar, .bass, .keys, .drums, .recording, .accsesories, .software, .sound{
   width: 100%;
+  max-width: 1864px;
+  margin-left: 20px;
   height: 260px;
   display: inline-block;
   margin-top: 70px;
@@ -637,12 +641,12 @@ footer{
   }
   .Inert_Buttons{
     display: inline-flex;
-    padding-left: 180px;
+    padding-left: 140px;
     align-content: space-evenly;
     justify-content: space-evenly;
     align-items: baseline;
     justify-items: stretch;
-    padding-right: 30px;
+    padding-right: 20px;
   }
 
   #shop-cart{
@@ -661,17 +665,28 @@ footer{
     border-radius: 30px;
     margin-top: 15px;
     width: 100%;
-    max-width: 1294px;
-    margin-left: 29px;
+    max-width: 1284px;
+    margin-left: 20px;
     height: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   }
 
+  .guitar, .bass, .keys, .drums, .recording, .accsesories, .software, .sound{
+    width: 100%;
+    max-width: 1284px;
+    margin-left: 20px;
+    height: 260px;
+    display: inline-block;
+    margin-top: 70px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+  }
 
   .contenedor-lista{
     display: inline-block;
     list-style: none;
-    width: 1060px;
+    width: 940px;
   }
   
   .elemento-1{
@@ -831,6 +846,330 @@ footer{
 
     #barra-categorias h2{
       padding-top: 20px;
-      font-size: 28px;
+      font-size:28px;
+    }
+    .guitar, .bass, .keys, .drums, .recording, .accsesories, .software, .sound{
+      width: 100%;
+      max-width: 894px;
+      margin-left: 20px;
+      height: 260px;
+      display: inline-block;
+      margin-top: 70px;
+      background: #F3F3F3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 60px;
+    }
+  
+    .contenedor-lista{
+      display: inline-block;
+      list-style: none;
+      width: 550px;
+    }
+    
+    .elemento-1{
+      display: inline-block;
+      width: 100px;
+      padding: 6px;
+      text-align: center;
+      margin-right: 14px;
+      margin-left: 6px;
+      margin-bottom: 6px;
+    }
+    
+    .elemento-1 a{
+      color: #000;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    
+    .elemento-3{
+      display: inline-block;
+      width: 100px;
+      padding: 10px 0;
+      text-align: center;
+      margin-right: 14px;
+      margin-left: 6px;
+      margin-bottom: 8px;
+    }
+    
+    .elemento-3 a{
+      color: #000;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    
+  
+    .decoracion-pr{
+      width: 100%;
+      height: 80px;
+      max-width: 894px;
+      background: #DFE238;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 44px;
+      margin: 20px  20px 20px 30px;
+    }
+  
+    .slider-container {
+      width: 100%;
+      max-width: 894px;
+      height: 197px;
+      background: #F3F3F3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 44px;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      margin-left: 28px;
     }
   }
+
+@media all and (max-width: 768px){
+  .logo{
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+    #Search-bar{
+      margin-top: 5px;
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      position: relative;
+      top: 5px;
+      left: 180px;
+      max-width: 461px;
+      max-height: 54px;
+      padding-inline-start: 10px;
+      padding-right: 64px;
+      outline: none;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      border-style: none;
+    }
+    .search button { 
+      background: rgb(254, 158, 44);
+      border-radius: 10px;
+      width: 54px;
+      height: 54px;
+      position: absolute;
+      right: 118px;
+      top: 10px;
+      padding: 0;
+      margin-bottom: 0;
+      border-style: none;
+    }
+    
+    .User_Button{
+      width: 200px;
+      height: 48px;
+      background: #CFD235;
+      box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      border-style: none;
+      position: relative;
+      top: -130px;
+      left: 20px;
+    }
+  
+    .User_Button i{
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: 600;
+      text-shadow:  4px 4px 3px rgba(0, 0, 0, 0.25);
+    }
+    
+    .User_Button a{
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #000;
+    }
+  
+    .Inert_Buttons{
+      display: none;
+    }
+  
+    .Social_Media{
+      width: 111px;
+      height: 25px;
+      display: inline-block;
+      position: absolute;
+      top: -10px;
+      right: 1px;
+      } 
+  
+    #shop-cart{
+      position: absolute;
+      top: 185px;
+      right: 45px;
+      font-size: 36px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+    
+    }
+
+    #menuToggle {
+      display: block;
+      position: relative;
+      top: -10px;
+      left: 40px;
+    }
+
+    #barra-categorias{
+      background-color:rgb(223, 226, 56);
+      border-radius: 30px;
+      margin-top: 15px;
+      width: 100%;
+      max-width: 694px;
+      margin-left: 29px;
+      height: 60px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    }
+
+    #barra-categorias h2{
+      padding-top: 10px;
+      font-size:28px;
+    }
+    .guitar, .bass, .keys, .drums, .recording, .accsesories, .software, .sound{
+      /* width: 100%;
+      max-width: 694px;
+      margin-left: 20px;
+      height: 240px;
+      display: inline-block;
+      margin-top: 70px;
+      background: #F3F3F3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 60px; */
+     
+      position: absolute;
+      z-index: -1; 
+      display: none;
+    }
+  
+    #img-container-gr, #img-container-ba, 
+    #img-container-ky, #img-container-dr, 
+    #img-container-rg, #img-container-accs, 
+    #img-container-sw, #img-container-sd{
+      width: 228px;
+      height: 240px;
+      display: inline-block;
+      background: #FFFFFF;
+      margin-left: 2px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 60px;
+      position: relative;
+      z-index: 99999;
+    }
+
+    .contenedor-lista{
+      display: inline-block;
+      list-style: none;
+      width: 420px;
+    }
+    
+    .elemento-1{
+      display: inline-block;
+      width: 70px;
+      padding: -2px;
+      text-align: center;
+      margin-right: 14px;
+      margin-left: 4px;
+      margin-bottom: 4px;
+    }
+    
+    .elemento-1 a{
+      color: #000;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    
+    .elemento-3{
+      display: inline-block;
+      width: 50px;
+      padding: 4px 0;
+      text-align: center;
+      margin-right: 10px;
+      margin-left: 6px;
+      margin-bottom: 8px;
+    }
+    
+    .elemento-3 a{
+      color: #000;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    
+    #img-container-gr img{
+      width: 134px;
+      height: 188px;
+      margin: 16px 42px;
+    }
+    
+    
+    #img-container-ba img{
+      width: 178px;
+      height: 178px;
+      margin: 16px 20px;
+    }
+    
+    #img-container-ky img{
+      width: 232px;
+      height: 239px;
+    }
+    
+    
+    #img-container-dr img{
+      width: 258px;
+      height: 180px;
+      object-fit: scale-down;
+      margin: 20px -20px;
+    }
+    
+    #img-container-rg img{
+      width: 308px;
+      height: 190px;
+      object-fit: scale-down;
+      margin: 20px -38px ;
+    }
+    
+    #img-container-accs img{
+      width: 238px;
+      height: 190px;
+      object-fit: scale-down;
+      margin-top: 20px;
+    }
+    
+    
+    #img-container-sw img{
+      width: 242px;
+      height: 179px;
+      object-fit: scale-down;
+      margin-top: 25px;
+    }
+    
+
+    .decoracion-pr{
+      width: 100%;
+      height: 60px;
+      max-width: 684px;
+      background: #DFE238;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 44px;
+      margin: 20px  20px 20px 30px;
+    }
+  
+    .slider-container {
+      width: 100%;
+      max-width: 684px;
+      height: 197px;
+      background: #F3F3F3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 44px;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      margin-left: 28px;
+    }
+
+} 
